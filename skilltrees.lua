@@ -312,8 +312,33 @@ function SkillTreeTweakData:init(tweak_data)
 	
 --Ghost/Silent Killer skill switches
 --Switch Professional to ace, High value target (hitman) to T2, Unseen Strike as Sneaky bastard alternative
-	--The Professional
-	self.skills.silence_expert = {
+	
+	--Unseen Strike (switched pos with HVT)
+	self.skills.hitman = {
+		{
+			upgrades = {
+				"player_unseen_increased_crit_chance_1",
+				"player_unseen_temp_increased_crit_chance_1"
+			},
+			cost = self.costs.hightier
+		},
+		{
+			upgrades = {
+				"player_unseen_increased_crit_chance_2",
+				"player_unseen_temp_increased_crit_chance_2"
+			},
+			cost = self.costs.hightierpro
+		},
+		name_id = "menu_unseen_strike_beta",
+		desc_id = "menu_unseen_strike_beta_desc",
+		icon_xy = {
+			10,
+			11
+		}
+	}
+	
+	--The Professional (switched pos with unseen Strike)
+	self.skills.unseen_strike = {
 		{
 			upgrades = {
 				"weapon_silencer_recoil_index_addend",
@@ -339,8 +364,8 @@ function SkillTreeTweakData:init(tweak_data)
 		},
 	}
 	
-	--High Value Target (Changed in a newer update, does not work with old syntax)
-	self.skills.hitman = {
+	--High Value Target (switched pos with The Professional)
+	self.skills.silence_expert = {
 		{
 			upgrades = {
 				"weapon_steelsight_highlight_specials",
@@ -361,29 +386,6 @@ function SkillTreeTweakData:init(tweak_data)
 		icon_xy = {
 			8,
 			2
-		}
-	}
-	
-	self.skills.unseen_strike = {
-		{
-			upgrades = {
-				"player_unseen_increased_crit_chance_1",
-				"player_unseen_temp_increased_crit_chance_1"
-			},
-			cost = self.costs.hightier
-		},
-		{
-			upgrades = {
-				"player_unseen_increased_crit_chance_2",
-				"player_unseen_temp_increased_crit_chance_2"
-			},
-			cost = self.costs.hightierpro
-		},
-		name_id = "menu_unseen_strike_beta",
-		desc_id = "menu_unseen_strike_beta_desc",
-		icon_xy = {
-			10,
-			11
 		}
 	}
 	
