@@ -314,10 +314,7 @@ function SkillTreeTweakData:init(tweak_data)
 --Switch Professional to ace, High value target (hitman) to T2, Unseen Strike as Sneaky bastard alternative
 	--The Professional
 	self.skills.silence_expert = {
-		["name_id"] = "menu_silence_expert_beta",
-		["desc_id"] = "menu_silence_expert_beta_desc",
-		["icon_xy"] = {4, 4},
-		[1] = {
+		{
 			upgrades = {
 				"weapon_silencer_recoil_index_addend",
 				"weapon_silencer_enter_steelsight_speed_multiplier",
@@ -325,7 +322,7 @@ function SkillTreeTweakData:init(tweak_data)
 			},
 			cost = self.costs.hightier
 		},
-		[2] = {
+		{
 			upgrades = {
 				"weapon_silencer_damage_multiplier_1", -- Gives 15% more damage with silencers
 				"weapon_silencer_damage_multiplier_2", -- Gives 15% more damage with silencers
@@ -333,14 +330,22 @@ function SkillTreeTweakData:init(tweak_data)
 				"weapon_silencer_armor_piercing_chance_2" -- Gives piercing with silencers
 			},
 			cost = self.costs.hightierpro
-		}
+		},
+		name_id = "menu_silence_expert_beta",
+		desc_id = "menu_silence_expert_beta_desc",
+		icon_xy = {
+			4, 
+			4
+		},
 	}
 	
 	--High Value Target (Changed in a newer update, does not work with old syntax)
 	self.skills.hitman = {
 		{
-			upgrades = {"weapon_steelsight_highlight_specials",
-								"player_marked_enemy_extra_damage"},
+			upgrades = {
+				"weapon_steelsight_highlight_specials",
+				"player_marked_enemy_extra_damage"
+				},
 			cost = self.costs.hightier
 		},
 		{
@@ -356,6 +361,29 @@ function SkillTreeTweakData:init(tweak_data)
 		icon_xy = {
 			8,
 			2
+		}
+	}
+	
+	self.skills.unseen_strike = {
+		{
+			upgrades = {
+				"player_unseen_increased_crit_chance_1",
+				"player_unseen_temp_increased_crit_chance_1"
+			},
+			cost = self.costs.hightier
+		},
+		{
+			upgrades = {
+				"player_unseen_increased_crit_chance_2",
+				"player_unseen_temp_increased_crit_chance_2"
+			},
+			cost = self.costs.hightierpro
+		},
+		name_id = "menu_unseen_strike_beta",
+		desc_id = "menu_unseen_strike_beta_desc",
+		icon_xy = {
+			10,
+			11
 		}
 	}
 	
