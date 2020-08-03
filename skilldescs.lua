@@ -17,7 +17,7 @@ Hooks:Add("LocalizationManagerPostInit", "LocalizationManagerPostInit_LocExample
 		--Iron Man
 		["menu_juggernaut_beta_desc"] = "BASIC: ##$basic##\nYour total armor value is increased by ##100%##.\n\nACE: ##$pro##\nUnlocks the ability to wear the ##Improved Combined Tactical Vest##.\n\nYour total armor value is increased to ##200%## of its original value.",
 		--Hostage taker
-		["menu_black_marketeer_beta_desc"] = "BASIC: ##$basic##\nHaving at least one of your own hostage or converted law enforcer makes you regenerate ##4.5%## health every ##5 seconds##.\n\nACE: ##$pro##\nHaving at least one of your own hostage or converted law enforcer makes you regenerate ##10%## health every ##5 seconds##.",
+		["menu_black_marketeer_beta_desc"] = "BASIC: ##$basic##\nHaving at least one of your own hostage or converted law enforcer makes you regenerate ##7.5%## health every ##5 seconds##.\n\nACE: ##$pro##\nHaving at least one of your own hostage or converted law enforcer makes you regenerate ##18%## health every ##5 seconds##.",
 		--Joker
 		["menu_joker_beta_desc"] = "BASIC: ##$basic##\nYou can convert a non-special enemy to fight on your side. This cannot be done during stealth and the enemy must have surrendered in order for you to convert them.\n\nYou can only convert one non-special enemy at a time.\n\nACE: ##$pro##\nYour converted enemy deal ##8 times## their base damage. The time taken to convert an enemy is reduced by ##65%##.",
 		--Partners In Crime

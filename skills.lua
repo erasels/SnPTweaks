@@ -19,7 +19,7 @@ function UpgradesTweakData:init(tweak_data)
 --SKILLS
 --MASTERMIND-----------------------------------------------------------------------------------------------------------------------------
 --Hostage Taker
-self.values.player.hostage_health_regen_addend = {0.045, 0.1} --Regen 4.5 and 10% health per 5secs with hostage
+self.values.player.hostage_health_regen_addend = {0.075, 0.18} --Regen 7.5 and 18% health per 5secs with hostage
 
 --Ammo Efficiency
 self.values.player.head_shot_ammo_return = {
