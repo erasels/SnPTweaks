@@ -183,7 +183,7 @@ self.values.player.detection_risk_add_dodge_chance = {
 	{0.01, 3, "below", 33, 1}, --Gain 1% Dodge_chance for every 3 Points of Concealment below 33 Concealment at a maximum of (100%*)
 	{0.01, 2, "below", 45, 1}} --With 3 Concealment = 21% extra dodge 
 
---Unseen Strike
+--Unseen Strike (reduced in tier)
 self.values.player.unseen_increased_crit_chance = {
 		{
 			min_time = 4,

@@ -83,7 +83,7 @@ Hooks:Add("LocalizationManagerPostInit", "LocalizationManagerPostInit_LocExample
 		--Surefire
 		["menu_fast_fire_beta_desc"] = "BASIC: ##$basic##\nYour SMGs, LMGs and Assault Rifles gain ##15## more bullets in their magazine. This does not affect the \"Lock n' Load\" Ace skill.\n\nACE: ##$pro##\nYour ranged weapons can now pierce through enemy body armor and shields. Furthermore, your bullets can now pierce through thin (##40cm##) walls.\n\nNote: Does not apply to throwable weapons or shotguns.",
 		--Unseen Strike
-		["menu_unseen_strike_beta_desc"] = "BASIC: ##$basic##\nIf you do not lose any armor or health for 3 seconds, you gain ##50%## critical hit chance for ##12 seconds##.\n\nACE: ##$pro##\nThe critical hit chance duration is increased to ##30 seconds## and the critical hit chance is increased to ##100%##.",
+		["menu_unseen_strike_beta_desc"] = "BASIC: ##$basic##\nIf you do not lose any armor or health for 4 seconds, you gain ##40%## critical hit chance for ##14 seconds##.\n\nACE: ##$pro##\nIf you do not lose any armor or health for 3 seconds, you gain ##65%## critical hit chance for ##32 seconds##.",
 		--Bulletstorm
 		["menu_ammo_reservoir_beta_desc"] = "BASIC: ##$basic##\nIncreases the weapon swap speed and fire rate of all weapons by ##15%##.\n\nACE: ##$pro##\nIncreases the reload speed of all weapons by ##20%##.",
 		--Portable Saw
