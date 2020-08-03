@@ -186,17 +186,19 @@ self.values.player.detection_risk_add_dodge_chance = {
 --Unseen Strike
 self.values.player.unseen_increased_crit_chance = {
 		{
-			min_time = 3,
-			max_duration = 12,
-			crit_chance = 1.5},
+			min_time = 4,
+			max_duration = 14,
+			crit_chance = 1.4},
 		{
 			min_time = 3,
-			max_duration = 30,
-			crit_chance = 2}}
+			max_duration = 32,
+			crit_chance = 1.65}
+	}
 
 self.values.temporary.unseen_strike = {
-		{1.5, 12},
-		{2, 30}}
+		{1.4, 14},
+		{1.65, 32}
+	}
 
 --Low blow
 self.values.player.detection_risk_add_crit_chance = {
