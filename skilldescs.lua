@@ -47,7 +47,7 @@ Hooks:Add("LocalizationManagerPostInit", "LocalizationManagerPostInit_LocExample
 		--Feign Death
 		["menu_feign_death_desc"] = "BASIC: ##$basic##\nWhen you get downed, you have a ##30%## chance to instantly get revived.\n\nACE: ##$pro##\nYour chance to instantly revive is increased to ##75%##.",
 		--The Professional
-		["menu_silence_expert_beta_desc"] = "BASIC: ##$basic##\nYou gain ##8## weapon stability, ##12## weapon accuracy and ##100%## snap to zoom speed increase with silenced weapons.\n\nACE: ##$pro##\nYou deal ##35%## more damage and have ##35%## chance to pierce enemy armor with all silenced weapons.",
+		["menu_silence_expert_beta_desc"] = "BASIC: ##$basic##\nYou gain ##8## weapon stability, ##12## weapon accuracy and ##100%## snap to zoom speed increase with silenced weapons.\nYou deal ##35%## more damage and have ##50%## chance to pierce enemy armor with all silenced weapons.\n\nACE: ##$pro##\nYou deal an additional ##50%## more damage with silenced weapons and silenced weapons always pierce enemy armor.",
 		--Scavenger
 		["menu_scavenging_beta_desc"] = "BASIC: ##$basic##\nYour ammo box pick up range is increased by ##75%## and every ##8th## enemy you kill will drop an extra ammo box.\n\nACE: ##$pro##\nEvery ##3rd## enemy you kill will drop an extra ammo box.\n\nNote: Ammo box drop modifications only work as host. As client this skill will only add an extra ammo box drop every ##6th## enemy with it's ##Ace## version.",
 		--Up You Go

@@ -343,16 +343,16 @@ function SkillTreeTweakData:init(tweak_data)
 			upgrades = {
 				"weapon_silencer_recoil_index_addend",
 				"weapon_silencer_enter_steelsight_speed_multiplier",
-				"weapon_silencer_spread_index_addend" -- Gives 12 accuraccy with silencers
+				"weapon_silencer_spread_index_addend", -- Gives 12 accuraccy with silencers
+				"weapon_silencer_damage_multiplier_1", -- Gives 35% more damage with silencers
+				"weapon_silencer_armor_piercing_chance_1" -- Gives piercing with silencers (50%)
 			},
 			cost = self.costs.hightier
 		},
 		{
 			upgrades = {
-				"weapon_silencer_damage_multiplier_1", -- Gives 15% more damage with silencers
-				"weapon_silencer_damage_multiplier_2", -- Gives 15% more damage with silencers
-				"weapon_silencer_armor_piercing_chance_1", -- Gives piercing with silencers
-				"weapon_silencer_armor_piercing_chance_2" -- Gives piercing with silencers
+				"weapon_silencer_damage_multiplier_2", -- Gives 85% more damage with silencers
+				"weapon_silencer_armor_piercing_chance_2" -- Gives piercing with silencers (100%)
 			},
 			cost = self.costs.hightierpro
 		},

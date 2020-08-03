@@ -213,7 +213,7 @@ self.values.player.marked_inc_dmg_distance = {
 self.values.player.taser_malfunction = {
 	{interval = 1, chance_to_trigger = 0.50}}	--Taser backfire chance inc to 50%
 
---The Professional
+--The Professional (Adjusted for tier change)
 --Adds back definition for Silencer damage multiplier which got added back to the skill in skilltree
 self.definitions.weapon_silencer_damage_multiplier_1 = {
 	category = "feature",
@@ -234,7 +234,13 @@ self.definitions.weapon_silencer_damage_multiplier_2 = {
 	}
 }
 
-self.values.weapon.silencer_damage_multiplier = {1.15, 1.35} --Silencer damage multiplier 1&2 can be cahnged with these values (35% more dmg from 30)
+self.values.weapon.silencer_damage_multiplier = {1.35, 1.85} --Silencer damage multiplier 1&2 can be cahnged with these values (from 15/30 to 35/85% damage increase)
+
+--Silencer armor pierce
+self.values.weapon.armor_piercing_chance_silencer = {
+		0.5,
+		1
+	}
 
 --Optical Illusions 
 self.values.player.silencer_concealment_increase = {3} --Every silent weapon increases your concealment by 3
