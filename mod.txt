@@ -40,6 +40,10 @@
 		{
 			"hook_id": "lib/managers/playermanager",
 			"script_path": "playermanager.lua"
+		},
+		{
+			"hook_id": "lib/managers/firemanager",
+			"script_path": "firemanager.lua"
 		}
 	]
 }

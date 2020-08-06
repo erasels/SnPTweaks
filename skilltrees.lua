@@ -418,6 +418,32 @@ function SkillTreeTweakData:init(tweak_data)
 		}
 	} -- add reload speed mult as ace isntead of fire rate mult
 	
+	--More Firepower
+	self.skills.more_fire_power = {
+		{
+			upgrades = {
+				"shape_charge_quantity_increase_1",
+				"trip_mine_quantity_increase_1",
+				"weapon_stronger_burn_1"
+			},
+			cost = self.costs.hightier
+		},
+		{
+			upgrades = {
+				"shape_charge_quantity_increase_2",
+				"trip_mine_quantity_increase_2",
+				"weapon_tank_burn_1"
+			},
+			cost = self.costs.hightierpro
+		},
+		name_id = "menu_more_fire_power",
+		desc_id = "menu_more_fire_power_desc",
+		icon_xy = {
+			9,
+			7
+		}
+	}
+	
 	--PERKS-----------------------------------------------------------------------------------------------
 	--Workaround
 	local deck2 = {

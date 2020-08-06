@@ -177,6 +177,38 @@ if not Network:is_client() then
 	self.values.player.drill_speed_multiplier = {0.7, 0.45}
 end
 
+--More Firepower
+self.values.weapon.stronger_burn = { 1.35, 1.6 } --Increase fire damage by 35/60%
+self.values.weapon.tank_burn = { 2 } --Buldozers take double damage
+
+self.definitions.weapon_stronger_burn_1 = {
+  name_id = "menu_weapon_stronger_burn",
+  category = "feature",
+  upgrade = {
+    value = 1,
+    upgrade = "stronger_burn",
+    category = "weapon"
+  }
+}
+self.definitions.weapon_stronger_burn_2 = {
+  name_id = "menu_weapon_stronger_burn",
+  category = "feature",
+  upgrade = {
+    value = 2,
+    upgrade = "stronger_burn",
+    category = "weapon"
+  }
+}
+self.definitions.weapon_tank_burn_1 = {
+  name_id = "menu_weapon_tank_burn",
+  category = "feature",
+  upgrade = {
+    value = 1,
+    upgrade = "tank_burn",
+    category = "weapon"
+  }
+}
+
 --GHOST-----------------------------------------------------------------------------------------------------------------------------
 --Sneaky bastard
 self.values.player.detection_risk_add_dodge_chance = {

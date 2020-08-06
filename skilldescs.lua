@@ -92,6 +92,8 @@ Hooks:Add("LocalizationManagerPostInit", "SnPTweaks_LocalizationManagerPostInit"
 		["menu_underdog_beta_desc"] = "BASIC: ##$basic##\nWhen three or more enemies are within ##18## meters of you, you receive a ##20%## damage bonus that lasts for ##7 seconds##.\n\nACE: ##$pro##\nWhen three or more enemies are within ##18## meters of you, you also receive a ##15%## damage reduction that lasts for ##7 seconds##.",
 		--Extra Lead
 		["menu_ammo_2x_beta_desc"] = "BASIC: ##$basic##\nYou can now place ##2## ammo bags instead of just one.\n\nAmmo bags placed by you grant players the ability to shoot without depleting their ammunition for up to ##5 seconds## after interacting with it. The more ammo players replenish, the longer the duration of the effect.\n\nACE: ##$pro##\nEach ammo bag contains ##50%## more ammunition.\n\nIncreases the base duration of the conditional infinite ammo effect by up to ##15 seconds##.",
+		--More Firepower
+		["menu_more_fire_power_desc"] = "BASIC: ##$basic##\nYou gain ##1## more shaped charge and ##4## more trip mines.\n\nYour ignites are ##35%## more powerful.\n\nACE: ##$pro##\nYou gain ##2## more shaped charges and ##7## more trip mines.\n\nBulldozers take ##double## damage from your ignites.",
 		
 		
 		--PERKS
