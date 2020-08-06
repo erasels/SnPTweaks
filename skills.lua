@@ -266,7 +266,29 @@ self.values.player.run_dodge_chance = {0.20} --20% increased dodge whislt sprint
 
 
 --FUGITIVE-----------------------------------------------------------------------------------------------------------------------------
---Trigger Happy
+--Trigger Happy (new)
+self.values.pistol.hit_self_heal = { 0.5, 1.2 } --restore 5 and 12 HP on pistol hit
+
+self.definitions.pistol_hit_self_heal_1 = {
+  name_id = "menu_pistol_hit_self_heal",
+  category = "feature",
+  upgrade = {
+    value = 1,
+    upgrade = "hit_self_heal",
+    category = "pistol"
+  }
+}
+self.definitions.pistol_hit_self_heal_2 = {
+  name_id = "menu_pistol_hit_self_heal",
+  category = "feature",
+  upgrade = {
+    value = 2,
+    upgrade = "hit_self_heal",
+    category = "pistol"
+  }
+}
+
+--Trigger Happy (old)
 self.values.pistol.stacking_hit_damage_multiplier = {
 	{damage_bonus = 1.1, max_stacks = 20,max_time = 5},
 	{damage_bonus = 1.2, max_stacks = 40, max_time = 10}}

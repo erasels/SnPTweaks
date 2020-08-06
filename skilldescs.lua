@@ -1,4 +1,4 @@
-Hooks:Add("LocalizationManagerPostInit", "LocalizationManagerPostInit_LocExample", function(loc)
+Hooks:Add("LocalizationManagerPostInit", "SnPTweaks_LocalizationManagerPostInit", function(loc)
 
 	loc:add_localized_strings( {
 		--SKILLS
@@ -29,7 +29,7 @@ Hooks:Add("LocalizationManagerPostInit", "LocalizationManagerPostInit_LocExample
 		--Shotgun Impact
 		["menu_shotgun_impact_beta_desc"] = "BASIC: ##$basic##\nYour weapon stability with all shotguns is increased by ##8##. You deal ##20%## more damage with shotguns.\n\nACE: ##$pro##\nYou deal ##50%## more damage with shotguns.",
 		--Trigger Happy
-		["menu_trigger_happy_beta_desc"] = "BASIC: ##$basic##\nFor every hit with a pistol you gain ##10%## damage boost that lasts for ##5 seconds##. Stacks up to ##20## times.\n\nACE: ##$pro##\nFor every hit with a pistol you gain ##20%## damage boost that lasts for ##10 seconds##. Stacks up to ##40## times.",
+		["menu_trigger_happy_beta_desc"] = "BASIC: ##$basic##\nFor every hit with a pistol you heal ##5## health.\n\nACE: ##$pro##\nIncrease the healed amount to ##12##.",
 		--Resilience
 		["menu_oppressor_beta_desc"] = "BASIC: ##$basic##\nIncrease your armor recovery rate by ##30%## and reduce the visual effect duration of Flashbangs by ##25%##.\n\nACE: ##$pro##\nReduce the visual effect duration of Flashbangs by ##90%## and reduce the screen shake effect of being hit by ##50%##.",
 		--Hardware Expert

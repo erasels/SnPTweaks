@@ -389,6 +389,31 @@ function SkillTreeTweakData:init(tweak_data)
 		}
 	}
 	
+--Fugitive Pistol tree skill switch and rework
+--Trigger Happy rework, new skill
+	self.skills.trigger_happy = {
+		{
+			upgrades = {
+				--"pistol_stacking_hit_damage_multiplier_1"
+				"pistol_hit_self_heal_1"
+			},
+			cost = self.costs.hightier
+		},
+		{
+			upgrades = {
+				--"pistol_stacking_hit_damage_multiplier_2"
+				"pistol_hit_self_heal_2"
+			},
+			cost = self.costs.hightierpro
+		},
+		name_id = "menu_trigger_happy_beta",
+		desc_id = "menu_trigger_happy_beta_desc",
+		icon_xy = {
+			11,
+			2
+		}
+	}
+	
 	--PERKS-----------------------------------------------------------------------------------------------
 	--Workaround
 	local deck2 = {
