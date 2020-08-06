@@ -239,7 +239,7 @@ self.values.player.detection_risk_add_crit_chance = {
 
 --High Value Target
 self.values.player.marked_inc_dmg_distance = {
-		{1, 1.5}} -- Marked enemies take 50% more damage if distance to them is greater than 1cm (is nearly nothing)
+		{1, 1.3}} -- Marked enemies take 30% more damage if distance to them is greater than 1cm (is nearly nothing)
 
 --Shockproof
 self.values.player.taser_malfunction = {

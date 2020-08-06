@@ -3,3 +3,6 @@ Rework on revive skills T2, make them weaker but last longer after death and add
 
 Technician:
 Make (non-turret) skills more viable/interesting. Don't condense mine or drill upgrades but add additional effects to them
+
+COmbat engineering grenade (explodsion) damage uphrade
+ace; Generate a grenade every x seconds or stamuna spent
