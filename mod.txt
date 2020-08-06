@@ -31,11 +31,15 @@
 		},
 		{
 			"hook_id": "lib/units/beings/player/states/playerstandard",
-			"script_path": "Playerstandard.lua"
+			"script_path": "playerstandard.lua"
 		},
 		{
 			"hook_id": "lib/player_actions/skills/playeractionunseenstrike",
 			"script_path": "playeractionunseenstrike.lua"
+		},
+		{
+			"hook_id": "lib/managers/playermanager",
+			"script_path": "playermanager.lua"
 		}
 	]
 }

@@ -43,7 +43,7 @@ Hooks:Add("LocalizationManagerPostInit", "LocalizationManagerPostInit_LocExample
 		--Nine Lives
 		["menu_nine_lives_beta_desc"] = "BASIC: ##$basic##\nYou gain a ##500%## increase to bleedout health.\n\nACE: ##$pro##\nYou gain the ability to get downed ##1## more time before going into custody.",
 		--Ammo Efficiency
-		["menu_single_shot_ammo_return_beta_desc"] = "BASIC: ##$basic##\nGetting ##3## headshots in less than ##7 seconds## will refund ##2## bullets to your used weapon.\n\nACE: ##$pro##\nGetting ##2## headshots in less than ##5 seconds## will refund ##3## bullets to your used weapon.\n\nNote: Can only be triggered by SMGs, Assault Rifles and Sniper Rifles fired in single shot mode.",
+		["menu_single_shot_ammo_return_beta_desc"] = "BASIC: ##$basic##\nGetting ##3## headshots in less than ##7 seconds## will refund ##2## bullets to your used weapon.\n\nACE: ##$pro##\nGetting ##2## headshots in less than ##5 seconds## will refund ##3## bullets to your used weapon.",
 		--Feign Death
 		["menu_feign_death_desc"] = "BASIC: ##$basic##\nWhen you get downed, you have a ##30%## chance to instantly get revived.\n\nACE: ##$pro##\nYour chance to instantly revive is increased to ##75%##.",
 		--The Professional
