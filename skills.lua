@@ -188,11 +188,11 @@ self.values.player.unseen_increased_crit_chance = {
 		{
 			min_time = 4,
 			max_duration = 14,
-			crit_chance = 1.4},
+			crit_chance = 1.25},
 		{
 			min_time = 3,
-			max_duration = 32,
-			crit_chance = 1.65}
+			max_duration = 24,
+			crit_chance = 1.5}
 	}
 
 self.values.temporary.unseen_strike = {
@@ -288,18 +288,31 @@ self.definitions.pistol_hit_self_heal_2 = {
   }
 }
 
---Trigger Happy (old)
-self.values.pistol.stacking_hit_damage_multiplier = {
-	{damage_bonus = 1.1, max_stacks = 20,max_time = 5},
-	{damage_bonus = 1.2, max_stacks = 40, max_time = 10}}
-
 --Desperado (ACE changed with Gun Nut)
+--Trigger Happy (old, added to Desperado Ace)
+self.values.pistol.stacking_hit_damage_multiplier = {
+	{damage_bonus = 1.4, max_stacks = 10,max_time = 5},
+	{damage_bonus = 1.4, max_stacks = 10, max_time = 5}}
+
 --[[self.values.pistol.stacked_accuracy_bonus = {{
 		max_stacks = 4,
 		accuracy_bonus = 0.9,
 		max_time = 10
 	}} --if I want to make changes --]]
 self.values.pistol.reload_speed_multiplier = {1.6} --Increase pistol reloadspeed by 60%
+
+--Pistol crit chance
+self.values.pistol.add_crit = { 0.15 } --Pistols have 15% extra crit chance
+
+self.definitions.pistol_add_crit_1 = {
+  name_id = "menu_pistol_add_crit",
+  category = "feature",
+  upgrade = {
+    value = 1,
+    upgrade = "add_crit",
+    category = "pistol"
+  }
+}
 	
 --Onehanded Talent
 self.values.pistol.damage_addend = {1, 2.5} --10 base damage added to pistol and then 25

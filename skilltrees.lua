@@ -163,42 +163,6 @@ function SkillTreeTweakData:init(tweak_data)
 			2
 		}
 	}
-	
-	--Desperado
-	self.skills.expert_handling = {
-		{
-			upgrades = {"pistol_stacked_accuracy_bonus_1"},
-			cost = self.costs.hightier
-		},
-		{
-			upgrades = {"pistol_fire_rate_multiplier"},
-			cost = self.costs.hightierpro
-		},
-		name_id = "menu_expert_handling",
-		desc_id = "menu_expert_handling_desc",
-		icon_xy = {
-			11,
-			1
-		}
-	}-- add fire rate mult as ace skill instead of reload speed
-	
-	--Gun Nut
-	self.skills.dance_instructor = {
-		{
-			upgrades = {"pistol_magazine_capacity_inc_1"},
-			cost = self.costs.hightier
-		},
-		{
-			upgrades = {"pistol_reload_speed_multiplier"},
-			cost = self.costs.hightierpro
-		},
-		name_id = "menu_dance_instructor",
-		desc_id = "menu_dance_instructor_desc",
-		icon_xy = {
-			11,
-			0
-		}
-	} -- add reload speed mult as ace isntead of fire rate mult
 
 	--Marksman
 	self.skills.sharpshooter = {
@@ -389,19 +353,17 @@ function SkillTreeTweakData:init(tweak_data)
 		}
 	}
 	
---Fugitive Pistol tree skill switch and rework
+--Fugitive Pistol tree skill reworks
 --Trigger Happy rework, new skill
 	self.skills.trigger_happy = {
 		{
 			upgrades = {
-				--"pistol_stacking_hit_damage_multiplier_1"
 				"pistol_hit_self_heal_1"
 			},
 			cost = self.costs.hightier
 		},
 		{
 			upgrades = {
-				--"pistol_stacking_hit_damage_multiplier_2"
 				"pistol_hit_self_heal_2"
 			},
 			cost = self.costs.hightierpro
@@ -413,6 +375,48 @@ function SkillTreeTweakData:init(tweak_data)
 			2
 		}
 	}
+	
+	--Desperado
+	self.skills.expert_handling = {
+		{
+			upgrades = {
+			"pistol_stacked_accuracy_bonus_1",
+			"pistol_add_crit_1"
+			},
+			cost = self.costs.hightier
+		},
+		{
+			upgrades = {
+			"pistol_fire_rate_multiplier",
+			"pistol_stacking_hit_damage_multiplier_1"
+			},
+			cost = self.costs.hightierpro
+		},
+		name_id = "menu_expert_handling",
+		desc_id = "menu_expert_handling_desc",
+		icon_xy = {
+			11,
+			1
+		}
+	}-- add fire rate mult as ace skill instead of reload speed and add trigger happy to ace
+	
+	--Gun Nut
+	self.skills.dance_instructor = {
+		{
+			upgrades = {"pistol_magazine_capacity_inc_1"},
+			cost = self.costs.hightier
+		},
+		{
+			upgrades = {"pistol_reload_speed_multiplier"},
+			cost = self.costs.hightierpro
+		},
+		name_id = "menu_dance_instructor",
+		desc_id = "menu_dance_instructor_desc",
+		icon_xy = {
+			11,
+			0
+		}
+	} -- add reload speed mult as ace isntead of fire rate mult
 	
 	--PERKS-----------------------------------------------------------------------------------------------
 	--Workaround

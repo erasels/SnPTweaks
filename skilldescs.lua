@@ -75,7 +75,7 @@ Hooks:Add("LocalizationManagerPostInit", "SnPTweaks_LocalizationManagerPostInit"
 		--Saw Massacre
 		["menu_carbon_blade_beta_desc"] = "BASIC: ##$basic##\nReduces the ammo cost of the blades on enemies to ##4##. When killing an enemy with the saw, you have a ##50%## chance to cause nearby enemies in a ##30m## radius to panic. Panic will make enemies go into short bursts of uncontrollable fear.\n\nACE: ##$pro##\nYou can now saw through shield enemies with your OVE9000 portable saw. Increases the chance to panic close by enemies when killing one with a saw to ##100%##.",
 		--Desperado
-		["menu_expert_handling_desc"] = "BASIC: ##$basic##\nEach successful pistol hit gives you a ##10%## increased accuracy bonus for ##10 seconds## and can stack ##4## times.\n\nACE: ##$pro##\nYou gain a ##50%## increased rate of fire with pistols.",
+		["menu_expert_handling_desc"] = "BASIC: ##$basic##\nEach successful pistol hit gives you a ##10%## increased accuracy bonus for ##10 seconds## and can stack ##4## times.\n\nYou have ##15%## additional critical hit chance with pistols.\n\nACE: ##$pro##\nFor every hit with a pistol you gain ##40%## damage boost that lasts for ##5## seconds. Stacks up to ##10## times.\n\nYou gain a ##50%## increased rate of fire with pistols.",
 		--Gun Nut
 		["menu_dance_instructor_desc"] = "BASIC: ##$basic##\nYour pistol magazine sizes are increased by ##5## bullets.\n\nACE: ##$pro##\nYou reload all pistols ##60%## faster.",
 		--Marksman
@@ -83,7 +83,7 @@ Hooks:Add("LocalizationManagerPostInit", "SnPTweaks_LocalizationManagerPostInit"
 		--Surefire
 		["menu_fast_fire_beta_desc"] = "BASIC: ##$basic##\nYour SMGs, LMGs and Assault Rifles gain ##15## more bullets in their magazine. This does not affect the \"Lock n' Load\" Ace skill.\n\nACE: ##$pro##\nYour ranged weapons can now pierce through enemy body armor and shields. Furthermore, your bullets can now pierce through thin (##40cm##) walls.\n\nNote: Does not apply to throwable weapons or shotguns.",
 		--Unseen Strike
-		["menu_unseen_strike_beta_desc"] = "BASIC: ##$basic##\nIf you do not lose any armor or health for 4 seconds, you gain ##40%## critical hit chance for ##14 seconds##.\n\nACE: ##$pro##\nIf you do not lose any armor or health for 3 seconds, you gain ##65%## critical hit chance for ##32 seconds##.",
+		["menu_unseen_strike_beta_desc"] = "BASIC: ##$basic##\nIf you do not lose any armor or health for 4 seconds, you gain ##25%## critical hit chance for ##14 seconds##.\n\nACE: ##$pro##\nIf you do not lose any armor or health for 3 seconds, you gain ##50%## critical hit chance for ##24 seconds##.",
 		--Bulletstorm
 		["menu_ammo_reservoir_beta_desc"] = "BASIC: ##$basic##\nIncreases the weapon swap speed and fire rate of all weapons by ##15%##.\n\nACE: ##$pro##\nIncreases the reload speed of all weapons by ##20%##.",
 		--Portable Saw

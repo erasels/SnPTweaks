@@ -46,3 +46,16 @@ function PlayerManager:_on_hit_enemy_pistol_heal_event(unit, attack_data)
 		end
 	end
 end
+
+--Despeado additional pistol crit chance
+local old_critical_hit_chance = PlayerManager.critical_hit_chance
+
+function PlayerManager:critical_hit_chance(detection_risk)
+	local multiplier = old_critical_hit_chance(self, detection_risk)
+	
+	if self:has_category_upgrade("pistol", "add_crit") and self:is_current_weapon_of_category("pistol") then
+		multiplier = multiplier + self:upgrade_value("pistol", "add_crit", 0)
+	end
+	
+	return multiplier
+end
