@@ -277,7 +277,7 @@ self.values.pistol.stacking_hit_damage_multiplier = {
 		accuracy_bonus = 0.9,
 		max_time = 10
 	}} --if I want to make changes --]]
-self.values.pistol.reload_speed_multiplier = {1.8} --Increase pistol reloadspeed by 80%
+self.values.pistol.reload_speed_multiplier = {1.6} --Increase pistol reloadspeed by 60%
 	
 --Onehanded Talent
 self.values.pistol.damage_addend = {1, 2.5} --10 base damage added to pistol and then 25

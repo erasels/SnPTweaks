@@ -77,7 +77,7 @@ Hooks:Add("LocalizationManagerPostInit", "LocalizationManagerPostInit_LocExample
 		--Desperado
 		["menu_expert_handling_desc"] = "BASIC: ##$basic##\nEach successful pistol hit gives you a ##10%## increased accuracy bonus for ##10 seconds## and can stack ##4## times.\n\nACE: ##$pro##\nYou gain a ##50%## increased rate of fire with pistols.",
 		--Gun Nut
-		["menu_dance_instructor_desc"] = "BASIC: ##$basic##\nYour pistol magazine sizes are increased by ##5## bullets.\n\nACE: ##$pro##\nYou reload all pistols ##80%## faster.",
+		["menu_dance_instructor_desc"] = "BASIC: ##$basic##\nYour pistol magazine sizes are increased by ##5## bullets.\n\nACE: ##$pro##\nYou reload all pistols ##60%## faster.",
 		--Marksman
 		["menu_sharpshooter_beta_desc"] = "BASIC: ##$basic##\nYou gain ##8## weapon accuracy with all SMGs, Assault Rifles and Sniper Rifles fired in single shot fire mode. Furthermore, you and your crew's weapon stability with pistols is increased by ##4## points.\n\nACE: ##$pro##\nYou gain a ##20%## accuracy bonus while aiming down sights with all SMGs, Assault Rifles and Sniper Rifles fired in single shot fire mode. Furthermore, you and your crew's weapon stability with all weapons is increased by ##8## points.",
 		--Surefire
