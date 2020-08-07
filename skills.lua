@@ -226,6 +226,28 @@ self.definitions.player_stamina_ammo_refill_throwable_1 = {
 self.values.player.stamina_ammo_refill_single = { { 20,0.05 } } --every 20 stamina spent gain 5% of your max weapon ammo
 self.values.player.stamina_ammo_refill_auto = {	{ 20,0.05 } }
 
+--Fire Trap
+self.values.player.fe_armor_regen = { 1.5, 2.5 } --Gain 15/25 Armor when killing an enemy with fire or explosion every x seconds
+
+self.definitions.player_fe_armor_regen_1 = {
+  name_id = "menu_player_fe_armor_regen",
+  category = "feature",
+  upgrade = {
+    value = 1,
+    upgrade = "fe_armor_regen",
+    category = "player"
+  }
+}
+self.definitions.player_fe_armor_regen_2 = {
+  name_id = "menu_player_fe_armor_regen",
+  category = "feature",
+  upgrade = {
+    value = 2,
+    upgrade = "fe_armor_regen",
+    category = "player"
+  }
+}
+
 --GHOST-----------------------------------------------------------------------------------------------------------------------------
 --Sneaky bastard
 self.values.player.detection_risk_add_dodge_chance = {

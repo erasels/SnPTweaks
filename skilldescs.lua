@@ -96,7 +96,8 @@ Hooks:Add("LocalizationManagerPostInit", "SnPTweaks_LocalizationManagerPostInit"
 		["menu_more_fire_power_desc"] = "BASIC: ##$basic##\nYou gain ##1## more shaped charge and ##4## more trip mines.\n\nYour ignites are ##35%## more powerful.\n\nACE: ##$pro##\nYou gain ##2## more shaped charges and ##7## more trip mines.\n\nBulldozers take ##double## damage from your ignites.",
 		--Combat Engineering
 		["menu_combat_engineering_desc"] = "BASIC: ##$basic##\nThe radius of your trip mine explosion is increased by ##30%##.\n\nYou gain ##1## throwable for every ##30## stamina used.\n\nACE: ##$pro##\nYour trip mine damage is increase by ##50%##.\n\nYou gain ##5%## ammo of your weapons' total ammo for every ##20## stamina used.",
-		
+		--Fire Trap
+		["menu_fire_trap_beta_desc"] = "BASIC: ##$basic##\nYour trip mines now spread fire around the area of detonation for ##10## seconds in a ##4## meter diameter.\n\nYou regenerate ##15## armor when an enemy dies to fire or an explosion. This effect cannot occur more than once every second.\n\nACE: ##$pro##\nIncreases the fire effect duration by ##10## seconds and increases the fire effect radius by ##50%##.\n\nYou regenerate an additional ##10## armor when an enemy dies to fire or an explosion.",
 		
 		--PERKS
 		--Grinder

@@ -29,8 +29,16 @@ Hooks:PostHook(PlayerManager, "check_skills", "SnPTweaks_check_skills", function
 	if self:has_category_upgrade("pistol", "hit_self_heal") then
 		self._message_system:register(Message.OnEnemyShot, "SnP_PistolHeal", callback(self, self, "_on_hit_enemy_pistol_heal_event")) --(messgae, uid, func)
 	else
-		self._message_system:unregister(Message.OnEnemyShot, "trigger_happy")
+		self._message_system:unregister(Message.OnEnemyShot, "SnP_PistolHeal")
 	end
+	
+	if self:has_category_upgrade("player", "fe_armor_regen") then
+		self._message_system:register(Message.OnEnemyKilled, "SnP_EnemyKilled_fe", callback(self, self, "_on_kill_enemy_fe")) 
+	else
+		self._message_system:unregister(Message.OnEnemyKilled, "SnP_EnemyKilled_fe")
+	end
+	
+	
 end)
 
 function PlayerManager:_on_hit_enemy_pistol_heal_event(unit, attack_data)
@@ -58,4 +66,20 @@ function PlayerManager:critical_hit_chance(detection_risk)
 	end
 	
 	return multiplier
+end
+
+--Fire Trap new skill addition, gain armor on fe kill
+local fe_kab_t = 0
+function PlayerManager:_on_kill_enemy_fe(equipped_unit, variant, killed_unit)
+	local t = Application:time()
+
+	if (variant == "fire" or variant == "explosion") and (t - fe_kab_t) > 0.75 then
+		fe_kab_t = t
+		local damage_ext = self:player_unit():character_damage()
+		local regen_armor = managers.player:upgrade_value("player", "fe_armor_regen", 0)
+
+		if damage_ext and regen_armor > 0 then
+			damage_ext:restore_armor(regen_armor)
+		end
+	end
 end

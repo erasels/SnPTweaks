@@ -469,6 +469,30 @@ function SkillTreeTweakData:init(tweak_data)
 		}
 	}
 	
+	--Fire Trap
+	self.skills.fire_trap = {
+		{
+			upgrades = {
+				"trip_mine_fire_trap_1",
+				"player_fe_armor_regen_1"
+			},
+			cost = self.costs.hightier
+		},
+		{
+			upgrades = {
+				"trip_mine_fire_trap_2",
+				"player_fe_armor_regen_2"
+			},
+			cost = self.costs.hightierpro
+		},
+		name_id = "menu_fire_trap_beta",
+		desc_id = "menu_fire_trap_beta_desc",
+		icon_xy = {
+			9,
+			9
+		}
+	}
+	
 	--PERKS-----------------------------------------------------------------------------------------------
 	--Workaround
 	local deck2 = {
