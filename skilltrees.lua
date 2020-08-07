@@ -444,6 +444,31 @@ function SkillTreeTweakData:init(tweak_data)
 		}
 	}
 	
+	--Combat Engineering
+	self.skills.combat_engineering = {
+		{
+			upgrades = {
+				"trip_mine_explosion_size_multiplier_1",
+				"player_stamina_ammo_refill_throwable_1"
+			},
+			cost = self.costs.hightier
+		},
+		{
+			upgrades = {
+				"trip_mine_damage_multiplier_1",
+				"player_stamina_ammo_refill_single",
+				"player_stamina_ammo_refill_auto"
+			},
+			cost = self.costs.hightierpro
+		},
+		name_id = "menu_combat_engineering",
+		desc_id = "menu_combat_engineering_desc",
+		icon_xy = {
+			1,
+			5
+		}
+	}
+	
 	--PERKS-----------------------------------------------------------------------------------------------
 	--Workaround
 	local deck2 = {

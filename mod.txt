@@ -44,6 +44,10 @@
 		{
 			"hook_id": "lib/managers/firemanager",
 			"script_path": "firemanager.lua"
+		},
+		{
+			"hook_id": "lib/units/beings/player/playermovement",
+			"script_path": "playermovement.lua"
 		}
 	]
 }

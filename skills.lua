@@ -209,6 +209,23 @@ self.definitions.weapon_tank_burn_1 = {
   }
 }
 
+--Combat Engineering
+self.values.player.stamina_ammo_refill_throwable = { 30 } --Every 30 stamina spent get 1 throwable
+
+self.definitions.player_stamina_ammo_refill_throwable_1 = {
+  name_id = "menu_player_stamina_ammo_refill_throwable",
+  category = "feature",
+  upgrade = {
+    value = 1,
+    upgrade = "stamina_ammo_refill_throwable",
+    category = "player"
+  }
+}
+
+--Unused skills, weapon ammo refresh on stamina spent
+self.values.player.stamina_ammo_refill_single = { { 20,0.05 } } --every 20 stamina spent gain 5% of your max weapon ammo
+self.values.player.stamina_ammo_refill_auto = {	{ 20,0.05 } }
+
 --GHOST-----------------------------------------------------------------------------------------------------------------------------
 --Sneaky bastard
 self.values.player.detection_risk_add_dodge_chance = {
