@@ -24,7 +24,6 @@ function PlayerManager:_on_enter_ammo_efficiency_event()
 	end
 end
 
---Trigger Happy, new effect
 Hooks:PostHook(PlayerManager, "check_skills", "SnPTweaks_check_skills", function (self)
 	if self:has_category_upgrade("pistol", "hit_self_heal") then
 		self._message_system:register(Message.OnEnemyShot, "SnP_PistolHeal", callback(self, self, "_on_hit_enemy_pistol_heal_event")) --(messgae, uid, func)
@@ -38,9 +37,14 @@ Hooks:PostHook(PlayerManager, "check_skills", "SnPTweaks_check_skills", function
 		self._message_system:unregister(Message.OnEnemyKilled, "SnP_EnemyKilled_fe")
 	end
 	
-	
+	if self:has_category_upgrade("player", "dodge_health_regen") then
+        self._message_system:register(Message.OnPlayerDodge, "dodge_health_regen", callback(self, self, "_on_dodge_health_regen"))
+    else
+        self._message_system:unregister(Message.OnPlayerDodge, "dodge_health_regen")
+    end
 end)
 
+--Trigger Happy, new effect
 function PlayerManager:_on_hit_enemy_pistol_heal_event(unit, attack_data)
 	local attacker_unit = attack_data.attacker_unit
 	local variant = attack_data.variant
@@ -66,6 +70,16 @@ function PlayerManager:critical_hit_chance(detection_risk)
 	end
 	
 	return multiplier
+end
+
+--Dire Need dodge health regen
+function PlayerManager:_on_dodge_health_regen()
+	local health_restored = self:upgrade_value("player", "dodge_health_regen")
+	local dmg = self:player_unit():character_damage()
+
+	if dmg:get_real_armor() <= 0 then
+		dmg:restore_health(health_restored, true)
+	end
 end
 
 --Fire Trap new skill addition, gain armor on fe kill

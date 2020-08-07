@@ -493,6 +493,30 @@ function SkillTreeTweakData:init(tweak_data)
 		}
 	}
 	
+	--Dire Need (add dodge health regen)
+	self.skills.dire_need = {
+		{
+			upgrades = {
+				"player_armor_depleted_stagger_shot_1",
+				"player_dodge_health_regen_1"
+			},
+			cost = self.costs.hightier
+		},
+		{
+			upgrades = {
+				"player_armor_depleted_stagger_shot_2",
+				"player_dodge_health_regen_2"
+			},
+			cost = self.costs.hightierpro
+		},
+		name_id = "menu_dire_need_beta",
+		desc_id = "menu_dire_need_beta_desc",
+		icon_xy = {
+			10,
+			8
+		}
+	}
+	
 	--PERKS-----------------------------------------------------------------------------------------------
 	--Workaround
 	local deck2 = {

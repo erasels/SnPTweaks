@@ -283,6 +283,29 @@ self.values.player.marked_inc_dmg_distance = {
 --Shockproof
 self.values.player.taser_malfunction = {
 	{interval = 1, chance_to_trigger = 0.50}}	--Taser backfire chance inc to 50%
+	
+--Dire Need
+self.values.player.dodge_health_regen = { 1,2 } --Regen 10/20 HP when dodging with no armor
+
+self.definitions.player_dodge_health_regen_1 = {
+  name_id = "menu_player_dodge_health_regen",
+  category = "feature",
+  upgrade = {
+    value = 1,
+    upgrade = "dodge_health_regen",
+    category = "player"
+  }
+}
+self.definitions.player_dodge_health_regen_2 = {
+  name_id = "menu_player_dodge_health_regen",
+  category = "feature",
+  upgrade = {
+    value = 2,
+    upgrade = "dodge_health_regen",
+    category = "player"
+  }
+}
+
 
 --The Professional (Adjusted for tier change)
 --Adds back definition for Silencer damage multiplier which got added back to the skill in skilltree
@@ -581,7 +604,7 @@ self.values.temporary.chico_injector = {{0.75, 9}} --increases Injector time to 
 
 --Maniac----------------------------------------------------------------------------
 --self.max_total_cocaine_stacks = 800 --Change max stacks from 600
-self.cocaine_stacks_decay_percentage_per_tick = 0.3 --30% decay + X instead of 60%
+self.cocaine_stacks_decay_percentage_per_tick = 0.45 --45% decay + X instead of 60%
 
 --Gambler---------------------------------------------------------------------------
 self.loose_ammo_restore_health_values = {
