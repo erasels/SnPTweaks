@@ -280,9 +280,34 @@ self.values.player.detection_risk_add_crit_chance = {
 self.values.player.marked_inc_dmg_distance = {
 		{1, 1.3}} -- Marked enemies take 30% more damage if distance to them is greater than 1cm (is nearly nothing)
 
---Shockproof
+--Shockproof (add new skill)
 self.values.player.taser_malfunction = {
-	{interval = 1, chance_to_trigger = 0.50}}	--Taser backfire chance inc to 50%
+	{interval = 1, chance_to_trigger = 0.50}
+}	--Taser backfire chance inc to 50%
+
+self.values.temporary.dodge_reload_speed = { 
+	{ 1.3,3},
+	{ 1.7,3}
+ } --30/70% reload speed for 3 seconds
+self.definitions.temporary_dodge_reload_speed_1 = {
+  name_id = "menu_temporary_dodge_reload_speed",
+  category = "temporary",
+  upgrade = {
+    value = 1,
+    upgrade = "dodge_reload_speed",
+    category = "temporary"
+  }
+}
+
+self.definitions.temporary_dodge_reload_speed_2 = {
+  name_id = "menu_temporary_dodge_reload_speed",
+  category = "temporary",
+  upgrade = {
+    value = 2,
+    upgrade = "dodge_reload_speed",
+    category = "temporary"
+  }
+}
 	
 --Dire Need
 self.values.player.dodge_health_regen = { 1,2 } --Regen 10/20 HP when dodging with no armor
@@ -357,6 +382,18 @@ self.values.player.stamina_regen_timer_multiplier = {0.25} --75% faster restart 
 self.values.player.stamina_regen_multiplier = {1.5} -- 50% inc stamina regen
 self.values.player.run_speed_multiplier = {1.4} --40% faster sprinting
 self.values.player.run_dodge_chance = {0.20} --20% increased dodge whislt sprinting
+
+--Second wind (make Ace more interesting)
+self.values.player.dodge_stamina_regen = { 15 }
+self.definitions.player_dodge_stamina_regen = {
+  name_id = "menu_player_dodge_stamina_regen",
+  category = "feature",
+  upgrade = {
+    value = 1,
+    upgrade = "dodge_stamina_regen",
+    category = "player"
+  }
+}
 
 
 --FUGITIVE-----------------------------------------------------------------------------------------------------------------------------

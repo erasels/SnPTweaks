@@ -3,7 +3,7 @@ function PlayerManager:damage_absorption()
   local total = 0
 
   for _, absorption in pairs(self._damage_absorption) do
-    total = total + Application:digest_value(absorption, false)
+	total = total + Application:digest_value(absorption, false)
   end
 
   local peer_id = managers.network:session():local_peer():id()
@@ -37,11 +37,28 @@ Hooks:PostHook(PlayerManager, "check_skills", "SnPTweaks_check_skills", function
 		self._message_system:unregister(Message.OnEnemyKilled, "SnP_EnemyKilled_fe")
 	end
 	
+	if self:has_category_upgrade("player", "dodge_stamina_regen") then
+		local stamina_restored = self:upgrade_value("player", "dodge_stamina_regen")
+		self._message_system:register(Message.OnPlayerDodge, "dodge_stamina_regen", function ()
+			self:player_unit():movement():add_stamina(stamina_restored)
+		end)
+	else
+		self._message_system:unregister(Message.OnPlayerDodge, "dodge_stamina_regen")
+	end
+	
 	if self:has_category_upgrade("player", "dodge_health_regen") then
-        self._message_system:register(Message.OnPlayerDodge, "dodge_health_regen", callback(self, self, "_on_dodge_health_regen"))
-    else
-        self._message_system:unregister(Message.OnPlayerDodge, "dodge_health_regen")
-    end
+		self._message_system:register(Message.OnPlayerDodge, "dodge_health_regen", callback(self, self, "_on_dodge_health_regen"))
+	else
+		self._message_system:unregister(Message.OnPlayerDodge, "dodge_health_regen")
+	end
+	
+	if self:has_category_upgrade("temporary", "dodge_reload_speed") then
+		self._message_system:register(Message.OnPlayerDodge, "dodge_reload_speed", function ()
+			self:activate_temporary_upgrade("temporary", "dodge_reload_speed")
+		end)
+	else
+		self._message_system:unregister(Message.OnPlayerDodge, "dodge_reload_speed")
+	end
 end)
 
 --Trigger Happy, new effect

@@ -517,6 +517,54 @@ function SkillTreeTweakData:init(tweak_data)
 		}
 	}
 	
+	--Shockproof
+	self.skills.insulation = {
+		{
+			upgrades = {
+				"player_taser_malfunction",
+				"temporary_dodge_reload_speed_1"
+			},
+			cost = self.costs.hightier
+		},
+		{
+			upgrades = {
+				"player_taser_self_shock",
+				"player_escape_taser_1",
+				"temporary_dodge_reload_speed_2"
+			},
+			cost = self.costs.hightierpro
+		},
+		name_id = "menu_insulation_beta",
+		desc_id = "menu_insulation_beta_desc",
+		icon_xy = {
+			3,
+			5
+		}
+	}
+	
+	--Second wind
+	self.skills.scavenger = {
+		{
+			upgrades = {
+				"temporary_damage_speed_multiplier"
+			},
+			cost = self.costs.default
+		},
+		{
+			upgrades = {
+				"player_team_damage_speed_multiplier_send",
+				"player_dodge_stamina_regen"
+			},
+			cost = self.costs.pro
+		},
+		name_id = "menu_scavenger_beta",
+		desc_id = "menu_scavenger_beta_desc",
+		icon_xy = {
+			10,
+			9
+		}
+	}
+	
 	--PERKS-----------------------------------------------------------------------------------------------
 	--Workaround
 	local deck2 = {

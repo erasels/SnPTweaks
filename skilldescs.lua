@@ -61,7 +61,7 @@ Hooks:Add("LocalizationManagerPostInit", "SnPTweaks_LocalizationManagerPostInit"
 		--Swan Song
 		["menu_perseverance_beta_desc"] = "BASIC: ##$basic##\nInstead of getting downed instantly, you gain the ability to keep on fighting for ##4 seconds## with a ##50%## movement penalty before going down.\n\nNote: Does not trigger on fall or fire damage.\n\nACE: ##$pro##\nIncreases the duration of Swan Song to ##8 seconds##. Ammunition won't be depleted while the effect is active.",
 		--Shockproof
-		["menu_insulation_beta_desc"] = "BASIC: ##$basic##\nWhen tased, the shock effect has a ##50%## chance to backfire on the Taser every second for 10 seconds, knocking them back.\n\nACE: ##$pro##\nWhen tased, you are able to free yourself from the taser interacting with it within ##2 seconds## of getting tased.",
+		["menu_insulation_beta_desc"] = "BASIC: ##$basic##\nWhen tased, the shock effect has a ##50%## chance to backfire on the Taser every second for 10 seconds, knocking them back.\n\nSuccessfully dodging will increase your reload speed by ##30%## for ##3## seconds.\n\nACE: ##$pro##\nWhen tased, you are able to free yourself from the taser interacting with it within ##2 seconds## of getting tased.\n\nThe reload speed increase is increased to ##70%##.",
 		--Martial Arts
 		["menu_martial_arts_beta_desc"] = "BASIC: ##$basic##\nYou take ##75%## less damage from all melee attacks. Because of training.\n\nACE: ##$pro##\nYou are ##75%## more likely to knock down enemies with a melee strike.",
 		--Pumping Iron
@@ -100,6 +100,8 @@ Hooks:Add("LocalizationManagerPostInit", "SnPTweaks_LocalizationManagerPostInit"
 		["menu_fire_trap_beta_desc"] = "BASIC: ##$basic##\nYour trip mines now spread fire around the area of detonation for ##10## seconds in a ##4## meter diameter.\n\nYou regenerate ##15## armor when an enemy dies to fire or an explosion. This effect cannot occur more than once every second.\n\nACE: ##$pro##\nIncreases the fire effect duration by ##10## seconds and increases the fire effect radius by ##50%##.\n\nYou regenerate an additional ##10## armor when an enemy dies to fire or an explosion.",
 		--Dire Need
 		["menu_dire_need_beta_desc"] = "BASIC: ##$basic##\nWhen your armor breaks, the first shot on every enemy will cause that enemy to stagger. This effect ends when your armor recovers.\n\nSuccessfully dodging will regenerate ##10## health.\n\nACE: ##$pro##\nThe effect persists for ##6## seconds after your armor has recovered.\n\nSuccessfully dodging will regenerate an additional ##10## health.",
+		--Second Wind
+		["menu_scavenger_beta_desc"] = "BASIC: ##$basic##\nWhen your armor breaks your movement speed is increase by ##30%## for ##5## seconds.\n\nACE: ##$pro##\nThis effect also applies to your crew when triggered.\n\nSuccessfully dodging will regenerate ##15## stamina.",
 		
 		--PERKS
 		--Grinder
