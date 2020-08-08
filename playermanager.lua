@@ -77,7 +77,7 @@ function PlayerManager:_on_dodge_health_regen()
 	local health_restored = self:upgrade_value("player", "dodge_health_regen")
 	local dmg = self:player_unit():character_damage()
 
-	if dmg:get_real_armor() <= 0 then
+	if dmg and dmg:get_real_armor() <= 0 then
 		dmg:restore_health(health_restored, true)
 	end
 end
@@ -92,7 +92,7 @@ function PlayerManager:_on_kill_enemy_fe(equipped_unit, variant, killed_unit)
 		local damage_ext = self:player_unit():character_damage()
 		local regen_armor = managers.player:upgrade_value("player", "fe_armor_regen", 0)
 
-		if damage_ext and regen_armor > 0 then
+		if damage_ext and damage_ext:get_real_armor() < damage_ext:_max_armor() and regen_armor > 0 then
 			damage_ext:restore_armor(regen_armor)
 		end
 	end
