@@ -181,6 +181,9 @@ if not Network:is_client() then
 	self.values.player.drill_speed_multiplier = {0.7, 0.45}
 end
 
+--Hardware Expert (add more to ace because drill restart is boring)
+
+
 --More Firepower
 self.values.weapon.stronger_burn = { 1.35, 1.6 } --Increase fire damage by 35/60%
 self.values.weapon.tank_burn = { 2 } --Buldozers take double damage
@@ -663,7 +666,5 @@ self.values.player.pocket_ecm_jammer_base = {{cooldown_drain = 10, duration = 6}
 self.values.player.pocket_ecm_heal_on_kill = {2} --stays at 20 since is heals armor and health now
 
 self.values.temporary.pocket_ecm_kill_dodge = {{0.23, 30, 1}} --orginally 20% dodge on kill for 30 secs
-
-
 
 end

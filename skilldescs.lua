@@ -33,7 +33,7 @@ Hooks:Add("LocalizationManagerPostInit", "SnPTweaks_LocalizationManagerPostInit"
 		--Resilience
 		["menu_oppressor_beta_desc"] = "BASIC: ##$basic##\nIncrease your armor recovery rate by ##30%## and reduce the visual effect duration of Flashbangs by ##25%##.\n\nACE: ##$pro##\nReduce the visual effect duration of Flashbangs by ##90%## and reduce the screen shake effect of being hit by ##50%##.",
 		--Hardware Expert
-		["menu_hardware_expert_beta_desc"] = "BASIC: ##$basic##\nYou fix drills and saws ##70%## faster. Drills and saws are also silent. Civilians and guards must see the drill or saw in order to become alerted. \n\nACE: ##$pro##\nGives your drills and saws a ##45%## chance to automatically restart after breaking. (##10%## as client to prevent desync)",
+		["menu_hardware_expert_beta_desc"] = "BASIC: ##$basic##\nYou fix drills and saws ##70%## faster. Drills and saws are also silent. Civilians and guards must see the drill or saw in order to become alerted. \n\nACE: ##$pro##\nGives your drills and saws a ##45%## chance to automatically restart after breaking. (##10%## as client to prevent desync)\n\nYou resist firing your weapons when tased.",
 		--Drill Expert
 		["menu_drill_expert_beta_desc"] = "BASIC: ##$basic##\nYour drill and saw timer is decreased by ##30%##.\n(##15%## as client to prevent desync)\n\nACE: ##$pro##\nYour drill and saw timer is decreased by ##65%##.\n(##30%## as client)",
 		--Kickstarter
@@ -93,7 +93,7 @@ Hooks:Add("LocalizationManagerPostInit", "SnPTweaks_LocalizationManagerPostInit"
 		--Extra Lead
 		["menu_ammo_2x_beta_desc"] = "BASIC: ##$basic##\nYou can now place ##2## ammo bags instead of just one.\n\nAmmo bags placed by you grant players the ability to shoot without depleting their ammunition for up to ##5 seconds## after interacting with it. The more ammo players replenish, the longer the duration of the effect.\n\nACE: ##$pro##\nEach ammo bag contains ##50%## more ammunition.\n\nIncreases the base duration of the conditional infinite ammo effect by up to ##15 seconds##.",
 		--More Firepower
-		["menu_more_fire_power_desc"] = "BASIC: ##$basic##\nYou gain ##1## more shaped charge and ##4## more trip mines.\n\nYour ignites are ##35%## more powerful.\n\nACE: ##$pro##\nYou gain ##2## more shaped charges and ##7## more trip mines.\n\nBulldozers take ##double## damage from your ignites.",
+		["menu_more_fire_power_desc"] = "BASIC: ##$basic##\nYou gain ##1## more shaped charge and ##4## more trip mines.\n\nYour fire damage is increased by ##35%##.\n\nACE: ##$pro##\nYou gain ##2## more shaped charges and ##7## more trip mines.\n\nYour fire damage is twice as strong against Bulldozers.",
 		--Combat Engineering
 		["menu_combat_engineering_desc"] = "BASIC: ##$basic##\nThe radius of your trip mine explosion is increased by ##30%##.\n\nYou gain ##1## throwable for every ##30## stamina used.\n\nACE: ##$pro##\nYour trip mine damage is increase by ##50%##.\n\nYou gain ##5%## ammo of your weapons' total ammo for every ##20## stamina used.",
 		--Fire Trap

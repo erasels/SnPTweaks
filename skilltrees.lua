@@ -589,6 +589,31 @@ function SkillTreeTweakData:init(tweak_data)
 		}
 	}
 	
+	self.skills.hardware_expert = {
+		{
+			upgrades = {
+				"player_drill_fix_interaction_speed_multiplier",
+				"player_trip_mine_deploy_time_multiplier_2",
+				"player_drill_alert",
+				"player_silent_drill"
+			},
+			cost = self.costs.default
+		},
+		{
+			upgrades = {
+				"player_drill_autorepair_1",
+				"player_resist_firing_tased"
+			},
+			cost = self.costs.pro
+		},
+		name_id = "menu_hardware_expert_beta",
+		desc_id = "menu_hardware_expert_beta_desc",
+		icon_xy = {
+			9,
+			6
+		}
+	}
+	
 	--PERKS-----------------------------------------------------------------------------------------------
 	--Workaround
 	local deck2 = {
