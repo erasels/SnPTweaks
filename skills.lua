@@ -317,7 +317,7 @@ self.definitions.temporary_dodge_reload_speed_2 = {
 }
 	
 --Dire Need
-self.values.player.dodge_health_regen = { 1,2 } --Regen 10/20 HP when dodging with no armor
+self.values.player.dodge_health_regen = { 0.7,1.5 } --Regen 7/15 HP when dodging with no armor
 
 self.definitions.player_dodge_health_regen_1 = {
   name_id = "menu_player_dodge_health_regen",

@@ -99,7 +99,7 @@ Hooks:Add("LocalizationManagerPostInit", "SnPTweaks_LocalizationManagerPostInit"
 		--Fire Trap
 		["menu_fire_trap_beta_desc"] = "BASIC: ##$basic##\nYour trip mines now spread fire around the area of detonation for ##10## seconds in a ##4## meter diameter.\n\nYou regenerate ##15## armor when an enemy dies to fire or an explosion. This effect cannot occur more than once every second.\n\nACE: ##$pro##\nIncreases the fire effect duration by ##10## seconds and increases the fire effect radius by ##50%##.\n\nYou regenerate an additional ##10## armor when an enemy dies to fire or an explosion.",
 		--Dire Need
-		["menu_dire_need_beta_desc"] = "BASIC: ##$basic##\nWhen your armor breaks, the first shot on every enemy will cause that enemy to stagger. This effect ends when your armor recovers.\n\nSuccessfully dodging will regenerate ##10## health.\n\nACE: ##$pro##\nThe effect persists for ##6## seconds after your armor has recovered.\n\nSuccessfully dodging will regenerate an additional ##10## health.",
+		["menu_dire_need_beta_desc"] = "BASIC: ##$basic##\nWhen your armor breaks, the first shot on every enemy will cause that enemy to stagger. This effect ends when your armor recovers.\n\nSuccessfully dodging will regenerate ##7## health.\n\nACE: ##$pro##\nThe effect persists for ##6## seconds after your armor has recovered.\n\nSuccessfully dodging will regenerate an additional ##8## health.",
 		--Second Wind
 		["menu_scavenger_beta_desc"] = "BASIC: ##$basic##\nWhen your armor breaks your movement speed is increase by ##30%## for ##5## seconds.\n\nACE: ##$pro##\nThis effect also applies to your crew when triggered.\n\nSuccessfully dodging will regenerate ##15## stamina.",
 		--Close By
