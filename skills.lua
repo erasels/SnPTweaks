@@ -405,7 +405,7 @@ self.definitions.player_dodge_stamina_regen = {
 
 --FUGITIVE-----------------------------------------------------------------------------------------------------------------------------
 --Trigger Happy (new)
-self.values.pistol.hit_self_heal = { 0.5, 1.2 } --restore 5 and 12 HP on pistol hit
+self.values.pistol.hit_self_heal = { 0.6, 1.2 } --restore 6 and 12 HP on pistol hit
 
 self.definitions.pistol_hit_self_heal_1 = {
   name_id = "menu_pistol_hit_self_heal",

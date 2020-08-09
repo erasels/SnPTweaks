@@ -29,7 +29,7 @@ Hooks:Add("LocalizationManagerPostInit", "SnPTweaks_LocalizationManagerPostInit"
 		--Shotgun Impact
 		["menu_shotgun_impact_beta_desc"] = "BASIC: ##$basic##\nYour weapon stability with all shotguns is increased by ##8##. You deal ##20%## more damage with shotguns.\n\nACE: ##$pro##\nYou deal ##50%## more damage with shotguns.",
 		--Trigger Happy
-		["menu_trigger_happy_beta_desc"] = "BASIC: ##$basic##\nFor every hit with a pistol you heal ##5## health.\n\nACE: ##$pro##\nIncrease the healed amount to ##12##.",
+		["menu_trigger_happy_beta_desc"] = "BASIC: ##$basic##\nFor every hit with a pistol you heal ##6## health.\n\nNote: This effect cannot occur more than once every ##0.25## seconds.\n\nACE: ##$pro##\nIncrease the healed amount to ##12##.",
 		--Resilience
 		["menu_oppressor_beta_desc"] = "BASIC: ##$basic##\nIncrease your armor recovery rate by ##30%## and reduce the visual effect duration of Flashbangs by ##25%##.\n\nACE: ##$pro##\nReduce the visual effect duration of Flashbangs by ##90%## and reduce the screen shake effect of being hit by ##50%##.",
 		--Hardware Expert
