@@ -565,6 +565,30 @@ function SkillTreeTweakData:init(tweak_data)
 		}
 	}
 	
+	--Close By
+	self.skills.close_by = {
+		{
+			upgrades = {
+				"shotgun_hip_run_and_shoot_1",
+				"shotgun_extra_ammo_multiplier"
+			},
+			cost = self.costs.hightier
+		},
+		{
+			upgrades = {
+				"shotgun_hip_rate_of_fire_1",
+				"shotgun_magazine_capacity_inc_1"
+			},
+			cost = self.costs.hightierpro
+		},
+		name_id = "menu_close_by_beta",
+		desc_id = "menu_close_by_beta_desc",
+		icon_xy = {
+			8,
+			6
+		}
+	}
+	
 	--PERKS-----------------------------------------------------------------------------------------------
 	--Workaround
 	local deck2 = {

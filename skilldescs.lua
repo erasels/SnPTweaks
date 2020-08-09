@@ -25,7 +25,7 @@ Hooks:Add("LocalizationManagerPostInit", "SnPTweaks_LocalizationManagerPostInit"
 		--Bullseye
 		["menu_prison_wife_beta_desc"] = "BASIC: ##$basic##\nYou regenerate ##15## armor for each successful headshot. This effect cannot occur more than once every ##2 seconds##.\n\nACE: ##$pro##\nYou regenerate ##35## armor for each successful headshot. This effect cannot occur more than once every ##2 seconds##.",
 		--Shotgun CBQ
-		["menu_shotgun_cqb_beta_desc"] = "BASIC: ##$basic##\nYou reload shotguns ##25%## faster.\n\nACE: ##$pro##\nYou reload shotguns ##100%## faster. You gain a ##125%## increase steel sight speed when using Shotguns.",
+		["menu_shotgun_cqb_beta_desc"] = "BASIC: ##$basic##\nYou reload shotguns ##25%## faster.\n\nACE: ##$pro##\nYou reload shotguns ##65%%## faster. You gain a ##125%## increase steel sight speed when using Shotguns.",
 		--Shotgun Impact
 		["menu_shotgun_impact_beta_desc"] = "BASIC: ##$basic##\nYour weapon stability with all shotguns is increased by ##8##. You deal ##20%## more damage with shotguns.\n\nACE: ##$pro##\nYou deal ##50%## more damage with shotguns.",
 		--Trigger Happy
@@ -102,6 +102,8 @@ Hooks:Add("LocalizationManagerPostInit", "SnPTweaks_LocalizationManagerPostInit"
 		["menu_dire_need_beta_desc"] = "BASIC: ##$basic##\nWhen your armor breaks, the first shot on every enemy will cause that enemy to stagger. This effect ends when your armor recovers.\n\nSuccessfully dodging will regenerate ##10## health.\n\nACE: ##$pro##\nThe effect persists for ##6## seconds after your armor has recovered.\n\nSuccessfully dodging will regenerate an additional ##10## health.",
 		--Second Wind
 		["menu_scavenger_beta_desc"] = "BASIC: ##$basic##\nWhen your armor breaks your movement speed is increase by ##30%## for ##5## seconds.\n\nACE: ##$pro##\nThis effect also applies to your crew when triggered.\n\nSuccessfully dodging will regenerate ##15## stamina.",
+		--Close By
+		["menu_close_by_beta_desc"] = "BASIC: ##$basic##\nYou can now hip-fire with your Shotguns while sprinting.\n\nYour total ammo capacity with shotguns is increased by ##30%##.\n\nACE: ##$pro##\nYour rate of fire is increased by ##35%## while firing from the hip with single shot Shotguns. Shotguns with magazines have their magazine sizes increased by ##15## shells.",
 		
 		--PERKS
 		--Grinder

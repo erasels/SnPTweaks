@@ -1,14 +1,5 @@
 --[[
 https://www.unknowncheats.me/forum/payday-2-a/288814-skill-tweaks.html#post2168420
-MASTERMIND		ENFORCER		TECHNICIAN			GHOST					FUGITIVE
-Hostage taker		Fully Loaded		Body Expertise		Sneaky Bastard		One Handed talent
-Joker					Iron Man			Drill Expert			Low Blow				Trigger Happy
-Partners In Crime	Bullseye			Hardware Expert	Duck and Cover	Nine Lives
-Painkillers				Shotgun CBQ	Surefire					Optical Illusion		Feign Death
-Ammo E.				Shotgun Impact							The Prof.				Up You Go
-Marksman			Resilience										High V. Target		Running From Death
-							Saw Massacre								Shockproof			Swan Song
-							Scavenger									Unseen Strike		Enitre melee section
 --]]
 
 local old_init = UpgradesTweakData.init
@@ -96,14 +87,27 @@ self.values.saw.extra_ammo_multiplier[2] = 2.5
 self.values.player.headshot_regen_armor_bonus = {1.5, 3.5} --15 armor per headshot every 2 secs and 35
 
 --Shotgun CBQ
-self.values.shotgun.reload_speed_multiplier = {1.25, 2} --25% inc reload speed for shotguns and 200% total
+self.values.shotgun.reload_speed_multiplier = {1.25, 1.65} --25/65% inc reload speed for shotguns
 
 --Shotgun Impact
 self.values.shotgun.damage_multiplier = {1.20, 1.50} --20% inc damage and then 50% inc damage
 
+--Close By (add shotgun ammo multiplier)
+self.values.shotgun.extra_ammo_multiplier = {
+	1.3
+}
+self.definitions.shotgun_extra_ammo_multiplier = {
+	name_id = "menu_shotgun_extra_ammo_multiplier",
+	category = "feature",
+	upgrade = {
+		value = 1,
+		upgrade = "extra_ammo_multiplier",
+		category = "shotgun"
+	}
+}
+
 --Bulletstorm
 --Stage one adds 15% faster weapon swap speed and firerate, level two adds 20% reload speed
-
 self.values.shotgun.consume_no_ammo_chance = {
 		0.0,
 		0.0
@@ -116,7 +120,7 @@ self.definitions.SnP_Bulletstorm_1 = {
 			upgrade = "consume_no_ammo_chance",
 			category = "shotgun"
 		}
-	} --dirty hack, using unused variables because I didn't manage to create my own
+	} --dirty hack, using unused variables because I didn't manage to create my own (<- look at this idiot)
 	
 self.values.shotgun.melee_knockdown_mul = {1}
 self.definitions.SnP_Bulletstorm_2 = {
