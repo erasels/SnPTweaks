@@ -614,6 +614,30 @@ function SkillTreeTweakData:init(tweak_data)
 		}
 	}
 	
+	--Overkill
+	self.skills.overkill = {
+		{
+			upgrades = {
+				"player_overkill_damage_multiplier",
+				"saw_secondary"
+			},
+			cost = self.costs.hightier
+		},
+		{
+			upgrades = {
+				"player_overkill_all_weapons",
+				"weapon_swap_speed_multiplier"
+			},
+			cost = self.costs.hightierpro
+		},
+		name_id = "menu_overkill_beta",
+		desc_id = "menu_overkill_beta_desc",
+		icon_xy = {
+			3,
+			2
+		}
+	}
+	
 	--PERKS-----------------------------------------------------------------------------------------------
 	--Workaround
 	local deck2 = {

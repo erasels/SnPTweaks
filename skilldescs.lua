@@ -104,6 +104,8 @@ Hooks:Add("LocalizationManagerPostInit", "SnPTweaks_LocalizationManagerPostInit"
 		["menu_scavenger_beta_desc"] = "BASIC: ##$basic##\nWhen your armor breaks your movement speed is increase by ##30%## for ##5## seconds.\n\nACE: ##$pro##\nThis effect also applies to your crew when triggered.\n\nSuccessfully dodging will regenerate ##15## stamina.",
 		--Close By
 		["menu_close_by_beta_desc"] = "BASIC: ##$basic##\nYou can now hip-fire with your Shotguns while sprinting.\n\nYour total ammo capacity with shotguns is increased by ##30%##.\n\nACE: ##$pro##\nYour rate of fire is increased by ##35%## while firing from the hip with single shot Shotguns. Shotguns with magazines have their magazine sizes increased by ##15## shells.",
+		--Overkill
+		["menu_overkill_beta_desc"] = "BASIC: ##$basic##\nWhen you kill an enemy with a shotgun or the OVE9000 portable saw, you receive a ##75%## damage increase for ##20## seconds.\n\nUnlocks the OVE9000 portable saw for you to use as a secondary weapon.\n\nACE: ##$pro##\nThe damage bonus now applies to all weapons. Skill must still be activated using a Shotgun or the OVE9000 portable saw. \nYour weapon swap speed is increased by ##80%##.",
 		
 		--PERKS
 		--Grinder
