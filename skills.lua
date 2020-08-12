@@ -540,7 +540,7 @@ self.definitions.player_max_health_reduction_2 = {
 		}
 	} --adds a second max health reduction stage
 
-self.values.player.max_health_reduction = {0.30, 0.25} --Max health reduction now 35 and 25%
+self.values.player.max_health_reduction = {0.30, 0.25} --Max health reduction now 30 and 25%
 
 self.values.player.health_damage_reduction = {0.8, 0.6} --Damage reduction from frenzy changed to 20 and 40%
 
@@ -559,10 +559,21 @@ self.values.player.melee_kill_increase_reload_speed = {{
 		10
 	}} --reload speed is doubled for 10 secs on melee kill
 
---Pumping Iron
-self.values.player.melee_damage_multiplier = {4} --melee dmg against specials is inc by 300%
-self.values.player.non_special_melee_multiplier = {4} --melee dmg against normals is inc by 300%
---Was 2.5 = 150% to balance melee damage but it's just not competetive against bloodthirst without this current boost.
+--Pumping Iron (new skill for ace)
+self.values.player.melee_damage_multiplier = {2.5} --melee dmg against specials is inc by 150%
+self.values.player.non_special_melee_multiplier = {2.5} --melee dmg against normals is inc by 150%
+
+self.values.player.explosive_ram = { true}
+
+self.definitions.player_explosive_ram = {
+  name_id = "menu_player_explosive_ram",
+  category = "feature",
+  upgrade = {
+    value = 1,
+    upgrade = "explosive_ram",
+    category = "player"
+  }
+}
 
 --Martial Arts
 self.values.player.melee_damage_dampener = {0.25} --75% melee dmg res

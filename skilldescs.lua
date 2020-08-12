@@ -65,7 +65,7 @@ Hooks:Add("LocalizationManagerPostInit", "SnPTweaks_LocalizationManagerPostInit"
 		--Martial Arts
 		["menu_martial_arts_beta_desc"] = "BASIC: ##$basic##\nYou take ##75%## less damage from all melee attacks. Because of training.\n\nACE: ##$pro##\nYou are ##75%## more likely to knock down enemies with a melee strike.",
 		--Pumping Iron
-		["menu_steroids_beta_desc"] = "BASIC: ##$basic##\nYour melee attacks against non-special enemies do ##300%## more damage.\n\nACE: ##$pro##\nYour melee attacks against special enemies do ##300%## more damage.",
+		["menu_steroids_beta_desc"] = "BASIC: ##$basic##\nYour melee attacks do ##150%## more damage.\n\nACE: ##$pro##\nRunning into enemies causes a small explosion, dealing damage based on your current stamina and depleting ##25%## of it.",
 		--Bloodthirst
 		["menu_bloodthirst_desc"] = "BASIC: ##$basic##\nEvery kill you get will increase your next melee attack damage by ##100%##. This effect gets reset when you kill an enemy with a melee attack.\n\nACE: ##$pro##\nWhenever you kill an enemy with a melee attack, you will gain a ##100%## increase in reload speed for ##10 seconds##.",
 		--Berserker

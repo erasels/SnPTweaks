@@ -638,6 +638,29 @@ function SkillTreeTweakData:init(tweak_data)
 		}
 	}
 	
+	--Pumping Iron
+	self.skills.steroids = {
+		{
+			upgrades = {
+				"player_non_special_melee_multiplier",
+				"player_melee_damage_multiplier"
+			},
+			cost = self.costs.default
+		},
+		{
+			upgrades = {
+				"player_explosive_ram"
+			},
+			cost = self.costs.pro
+		},
+		name_id = "menu_steroids_beta",
+		desc_id = "menu_steroids_beta_desc",
+		icon_xy = {
+			1,
+			3
+		}
+	}
+	
 	--PERKS-----------------------------------------------------------------------------------------------
 	--Workaround
 	local deck2 = {
