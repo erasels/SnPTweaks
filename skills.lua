@@ -564,12 +564,6 @@ self.values.player.melee_damage_multiplier = {4} --melee dmg against specials is
 self.values.player.non_special_melee_multiplier = {4} --melee dmg against normals is inc by 300%
 --Was 2.5 = 150% to balance melee damage but it's just not competetive against bloodthirst without this current boost.
 
---[[if _G.IS_VR then
-	self.values.player.non_special_melee_multiplier = {4}
-	self.values.player.melee_damage_multiplier = {4}
-end --Melee dmg mult for VR? Sorry but I do not really care about that.
---]]
-
 --Martial Arts
 self.values.player.melee_damage_dampener = {0.25} --75% melee dmg res
 self.values.player.melee_knockdown_mul = {1.75} --75% chance to knock down
