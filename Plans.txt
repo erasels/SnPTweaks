@@ -1,5 +1,3 @@
-Add some flamethrower and grenade perks to drills on breacher
-
 Add revive on death as capstone fugitive, basic 30% and ace with full armor (and aller CD?)
 
 Gain something on melee hit (ammo or health, or dodge?)
@@ -13,3 +11,14 @@ Damage reduction when running melee tree
 Boosts for stats when people are dead in fugi (nepgear Las)
 
 Integrate gamblers perk deck boost and remove parts of it from other perk decks
+
+Martial arts, increase stamina with ace
+
+
+https://github.com/DrNewbie/Mess/tree/master/mods/Emergency%20Defibrillation%20(Addon%20Equipment)
+https://github.com/DrNewbie/Mess/tree/master/mods/TF2%20Soldier%20LAS%20Boosts
+https://github.com/DrNewbie/Mess/tree/master/mods/DOOM%20Slayer%20LAS%20Boosts
+https://github.com/DrNewbie/Mess/tree/master/mods/%5BX%5D%20Nepgear%20LAS%20Boosts
+https://github.com/DrNewbie/Mess/tree/master/mods/Toga%20Himiko%20(Def%20Edit)%20LAS%20Boosts
+https://github.com/DrNewbie/Mess/tree/master/mods/Gambler%20Perk%20Deck%20Buff
+

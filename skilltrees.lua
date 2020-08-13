@@ -708,6 +708,29 @@ function SkillTreeTweakData:init(tweak_data)
 		}
 	}
 	
+	--Transporter
+	self.skills.pack_mule = {
+		{
+			upgrades = {
+				"carry_throw_distance_multiplier",
+				"player_armor_carry_bonus_1"
+			},
+			cost = self.costs.default
+		},
+		{
+			upgrades = {
+				"player_armor_break_ignition"
+			},
+			cost = self.costs.pro
+		},
+		name_id = "menu_pack_mule_beta",
+		desc_id = "menu_pack_mule_beta_desc",
+		icon_xy = {
+			8,
+			8
+		}
+	}
+	
 	--PERKS-----------------------------------------------------------------------------------------------
 	--Workaround
 	local deck2 = {

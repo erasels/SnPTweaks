@@ -132,6 +132,19 @@ self.definitions.SnP_Bulletstorm_2 = {
 			category = "shotgun"
 		}
 	}
+	
+--Transporter
+self.values.player.armor_break_ignition = { true} --
+
+self.definitions.player_armor_break_ignition = {
+  name_id = "menu_player_armor_break_ignition",
+  category = "feature",
+  upgrade = {
+    value = 1,
+    upgrade = "armor_break_ignition",
+    category = "player"
+  }
+}
 
 --Underdog
 self.values.temporary.dmg_dampener_outnumbered = {{
