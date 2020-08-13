@@ -62,16 +62,16 @@ Hooks:PostHook(PlayerManager, "check_skills", "SnPTweaks_check_skills", function
 end)
 
 --Trigger Happy, new effect
-local ph_heal_t = 0
 function PlayerManager:_on_hit_enemy_pistol_heal_event(unit, attack_data)
 	local attacker_unit = attack_data.attacker_unit
 	local variant = attack_data.variant
-	local player_dmg = managers.player:player_unit():character_damage()
+	local player_dmg = self:player_unit():character_damage()
 	
 	if attacker_unit == self:player_unit() and variant == "bullet" and self:is_current_weapon_of_category("pistol") then
+		self.ph_heal_t = self.ph_heal_t or 0
 		local t = Application:time()
-		if (t - ph_heal_t) > 0.25 then
-			ph_heal_t = t
+		if (t - self.ph_heal_t) > 0.25 then
+			self.ph_heal_t = t
 			local heal_amt = self:upgrade_value("pistol", "hit_self_heal", 0)
 	
 			if heal_amt ~= 0 and not player_dmg._dead and not player_dmg._bleed_out then
@@ -105,12 +105,12 @@ function PlayerManager:_on_dodge_health_regen()
 end
 
 --Fire Trap new skill addition, gain armor on fe kill
-local fe_kab_t = 0
 function PlayerManager:_on_kill_enemy_fe(equipped_unit, variant, killed_unit)
 	local t = Application:time()
+	self.fe_kab_t = self.fe_kab_t or 0
 
-	if (variant == "fire" or variant == "explosion") and (t - fe_kab_t) > 0.75 then
-		fe_kab_t = t
+	if (variant == "fire" or variant == "explosion") and (t - self.fe_kab_t) > 0.75 then
+		self.fe_kab_t = t
 		local damage_ext = self:player_unit():character_damage()
 		local regen_armor = managers.player:upgrade_value("player", "fe_armor_regen", 0)
 
