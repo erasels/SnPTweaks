@@ -661,6 +661,29 @@ function SkillTreeTweakData:init(tweak_data)
 		}
 	}
 	
+	--Kickstarter
+	self.skills.kick_starter = {
+		{
+			upgrades = {
+				"player_drill_autorepair_2",
+				"player_fire_stamina_regen"
+			},
+			cost = self.costs.hightier
+		},
+		{
+			upgrades = {
+				"player_drill_melee_hit_restart_chance_1"
+			},
+			cost = self.costs.hightierpro
+		},
+		name_id = "menu_kick_starter_beta",
+		desc_id = "menu_kick_starter_beta_desc",
+		icon_xy = {
+			9,
+			8
+		}
+	}
+	
 	--PERKS-----------------------------------------------------------------------------------------------
 	--Workaround
 	local deck2 = {

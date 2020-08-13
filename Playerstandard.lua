@@ -12,6 +12,7 @@ function PlayerStandard:_get_swap_speed_multiplier()
 end
 
 --Running into enemies causes a small explosion to spawn dealing damage based on current stamina
+--Thanks to Dr. Newbie Astolfo LAS for the base
 Hooks:PostHook(PlayerStandard, "_update_movement", "SnP_post_upd_mov", function(self, t)
 	if self._unit and alive(self._unit) and self:running() and self._unit.oobb and managers.player:has_category_upgrade("player", "explosive_ram") and self._ext_movement:stamina() > 5 then
 		local oobb = self._unit:oobb()

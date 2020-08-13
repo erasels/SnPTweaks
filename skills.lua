@@ -183,6 +183,18 @@ end
 
 --Hardware Expert (add more to ace because drill restart is boring)
 
+--Kickstarter
+self.values.player.fire_stamina_regen = {0.5}
+
+self.definitions.player_fire_stamina_regen = {
+  name_id = "menu_player_fire_stamina_regen",
+  category = "feature",
+  upgrade = {
+    value = 1,
+    upgrade = "fire_stamina_regen",
+    category = "player"
+  }
+}
 
 --More Firepower
 self.values.weapon.stronger_burn = { 1.35, 1.6 } --Increase fire damage by 35/60%

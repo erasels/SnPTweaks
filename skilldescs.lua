@@ -37,7 +37,7 @@ Hooks:Add("LocalizationManagerPostInit", "SnPTweaks_LocalizationManagerPostInit"
 		--Drill Expert
 		["menu_drill_expert_beta_desc"] = "BASIC: ##$basic##\nYour drill and saw timer is decreased by ##30%##.\n(##15%## as client to prevent desync)\n\nACE: ##$pro##\nYour drill and saw timer is decreased by ##65%##.\n(##30%## as client)",
 		--Kickstarter
-		["menu_kick_starter_beta_desc"] = "BASIC: ##$basic##\nYour drills and saws gain an additional ##30%## chance to automatically restart after breaking. (##20%## as client to prevent desync)\n\nACE: ##$pro##\nEnables the ability to reset a broken drill or saw with a melee attack. The ability has a ##50%## chance to fix the drill or saw. The ability can only be used once per time the drill or saw is broken.",
+		["menu_kick_starter_beta_desc"] = "BASIC: ##$basic##\nYour drills and saws gain an additional ##30%## chance to automatically restart after breaking. (##20%## as client to prevent desync)\n\nYou regenerate ##0.5## stamina for each enemy you set on fire.\n\nACE: ##$pro##\nEnables the ability to reset a broken drill or saw with a melee attack. The ability has a ##50%## chance to fix the drill or saw. The ability can only be used once per time the drill or saw is broken.",
 		--Optical Illusion
 		["menu_optic_illusions_desc"] = "BASIC: ##$basic##\nYou are ##35%## less likely to be targeted by enemies.\n\nACE: ##$pro##\nYou gain ##3## concealment for each silenced weapon you equip and reduces the concealment penalty of silencers by ##6##.",
 		--Nine Lives

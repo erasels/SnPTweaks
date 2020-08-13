@@ -48,6 +48,10 @@
 		{
 			"hook_id": "lib/units/beings/player/playermovement",
 			"script_path": "playermovement.lua"
+		},
+		{
+			"hook_id": "lib/units/enemies/cop/copdamage",
+			"script_path": "copdamage.lua"
 		}
 	]
 }
