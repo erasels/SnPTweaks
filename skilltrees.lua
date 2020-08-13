@@ -1190,11 +1190,7 @@ function SkillTreeTweakData:init(tweak_data)
 			desc_id = "menu_deck14_1_desc",
 			name_id = "menu_deck14_1",
 			upgrades = {
-				"player_cocaine_stacking_1",
-				"team_damage_reduction_1", --CC
-				"player_passive_damage_reduction_1", --CC
-				"temporary_loose_ammo_restore_health_1", --Gam
-				"player_gain_life_per_players" --Gam
+				"player_cocaine_stacking_1"
 			},
 			icon_xy = {
 				0,
@@ -1208,11 +1204,7 @@ function SkillTreeTweakData:init(tweak_data)
 			desc_id = "menu_deck14_3_desc",
 			name_id = "menu_deck14_3",
 			upgrades = {
-				"player_sync_cocaine_stacks",
-				"team_passive_stamina_multiplier_1", --CC
-				"player_passive_intimidate_range_mul", --CC
-				"player_damage_dampener_close_contact_1", --CC
-				"temporary_loose_ammo_give_team" --Gam
+				"player_sync_cocaine_stacks"
 			},
 			icon_xy = {
 				1,
@@ -1226,10 +1218,7 @@ function SkillTreeTweakData:init(tweak_data)
 			desc_id = "menu_deck14_5_desc",
 			name_id = "menu_deck14_5",
 			upgrades = {
-				"player_cocaine_stacks_decay_multiplier_1",
-				"team_passive_health_multiplier", --CC
-				"player_passive_health_multiplier_1", --CC
-				"player_loose_ammo_restore_health_give_team" --Gam
+				"player_cocaine_stacks_decay_multiplier_1"
 			},
 			icon_xy = {
 				2,
@@ -1243,10 +1232,7 @@ function SkillTreeTweakData:init(tweak_data)
 			desc_id = "menu_deck14_7_desc",
 			name_id = "menu_deck14_7",
 			upgrades = {
-				"player_sync_cocaine_upgrade_level_1",
-				"player_tier_armor_multiplier_1", --CC
-				"team_passive_armor_multiplier", --CC
-				"temporary_loose_ammo_restore_health_2" --Gam
+				"player_sync_cocaine_upgrade_level_1"
 			},
 			icon_xy = {
 				3,
@@ -1261,11 +1247,7 @@ function SkillTreeTweakData:init(tweak_data)
 			name_id = "menu_deck14_9",
 			upgrades = {
 				"player_passive_loot_drop_multiplier",
-				"player_cocaine_stack_absorption_multiplier_1",
-				"team_hostage_health_multiplier", --CC
-				"team_hostage_stamina_multiplier", --CC
-				"team_hostage_damage_dampener_multiplier", --CC
-				"temporary_loose_ammo_restore_health_3" --Gam
+				"player_cocaine_stack_absorption_multiplier_1"
 			},
 			icon_xy = {
 				0,
