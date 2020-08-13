@@ -20,7 +20,6 @@ end
 --Ignite enemies on armor break
 Hooks:PostHook(PlayerDamage, "_regenerate_armor", "SnP_post_regenerate_armor", function(self)
 	if managers.player:has_category_upgrade("player", "armor_break_ignition") then
-		log("Reset")
 		self._armor_break_ignition_capper = nil
 	end
 end)
@@ -39,8 +38,6 @@ Hooks:PreHook(PlayerDamage, "_on_damage_event", "SnP_pre_on_damage_event", funct
 	if not armor_broken then
 		return
 	end
-	
-	log("in")
 	
 	local units = World:find_units("sphere", self._unit:position(), 1000, managers.slot:get_mask("enemies"))
 	if type(units) ~= "table" then
