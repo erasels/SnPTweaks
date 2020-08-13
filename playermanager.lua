@@ -119,3 +119,16 @@ function PlayerManager:_on_kill_enemy_fe(equipped_unit, variant, killed_unit)
 		end
 	end
 end
+
+--Stamina flat addition
+local old_stamina_addend = PlayerManager.stamina_addend
+
+function PlayerManager:stamina_addend()
+	local add = old_stamina_addend(self)
+	
+	if self:has_category_upgrade("player", "flat_max_stamina_increase") then
+		add = add + self:upgrade_value("player", "flat_max_stamina_increase", 0)
+	end
+	
+	return add
+end

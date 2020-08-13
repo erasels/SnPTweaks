@@ -756,6 +756,30 @@ function SkillTreeTweakData:init(tweak_data)
 		}
 	}
 	
+	--Martial arts
+	self.skills.martial_arts = {
+		{
+			upgrades = {
+				"player_melee_damage_dampener",
+				"player_flat_max_stamina_increase_1"
+			},
+			cost = self.costs.default
+		},
+		{
+			upgrades = {
+				"player_melee_knockdown_mul",
+				"player_flat_max_stamina_increase_2"
+			},
+			cost = self.costs.pro
+		},
+		name_id = "menu_martial_arts_beta",
+		desc_id = "menu_martial_arts_beta_desc",
+		icon_xy = {
+			11,
+			7
+		}
+	}
+	
 	--PERKS-----------------------------------------------------------------------------------------------
 	--Workaround
 	local deck2 = {

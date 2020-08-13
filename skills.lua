@@ -642,7 +642,26 @@ self.definitions.player_explosive_ram = {
 self.values.player.melee_damage_dampener = {0.25} --75% melee dmg res
 self.values.player.melee_knockdown_mul = {1.75} --75% chance to knock down
 
+self.values.player.flat_max_stamina_increase = { 5, 15 } --Add 5/15 max stamina
 
+self.definitions.player_flat_max_stamina_increase_1 = {
+  name_id = "menu_player_flat_max_stamina_increase",
+  category = "feature",
+  upgrade = {
+    value = 1,
+    upgrade = "flat_max_stamina_increase",
+    category = "player"
+  }
+}
+self.definitions.player_flat_max_stamina_increase_2 = {
+  name_id = "menu_player_flat_max_stamina_increase",
+  category = "feature",
+  upgrade = {
+    value = 2,
+    upgrade = "flat_max_stamina_increase",
+    category = "player"
+  }
+}
 
 
 
