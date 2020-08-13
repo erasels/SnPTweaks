@@ -159,8 +159,6 @@ Hooks:Add("LocalizationManagerPostInit", "SnPTweaks_LocalizationManagerPostInit"
 		["menu_deck10_5_desc"] = "On ammo pack pick up, your crew members will also get healed by ##100%## of the amount of health you recovered.\n\nYour maximum health is increased by an additional ##20%##, for a total of ##40%##.",
 		["menu_deck10_7_desc"] = "Minimum and maximum health regeneration is increased by an additional ##8## health, for a total of ##32## to ##40## health.",
 		["menu_deck10_9_desc"] = "Minimum and maximum health regeneration is increased by an additional ##8## health, for a total of ##40## to ##48## health.\n\n##Your shared healing and ammo effect is now twice as effective.##\n\nDeck Completion Bonus: Your chance of getting a higher quality item during a Payday is increased by ##10%##."
-}
-
 	} )
 
 end)
