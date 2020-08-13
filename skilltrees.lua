@@ -731,6 +731,31 @@ function SkillTreeTweakData:init(tweak_data)
 		}
 	}
 	
+	--Fully Loaded
+	self.skills.bandoliers = {
+		{
+			upgrades = {
+				"extra_ammo_multiplier1",
+				"player_regain_throwable_from_ammo_1"
+			},
+			cost = self.costs.hightier
+		},
+		{
+			upgrades = {
+				"player_pick_up_ammo_multiplier",
+				"player_pick_up_ammo_multiplier_2",
+				"player_projectiles_from_ammo"
+			},
+			cost = self.costs.hightierpro
+		},
+		name_id = "menu_bandoliers_beta",
+		desc_id = "menu_bandoliers_beta_desc",
+		icon_xy = {
+			3,
+			0
+		}
+	}
+	
 	--PERKS-----------------------------------------------------------------------------------------------
 	--Workaround
 	local deck2 = {

@@ -34,9 +34,20 @@ self.values.temporary.passive_revive_damage_reduction = {
 
 --ENFORCER-----------------------------------------------------------------------------------------------------------------------------
 --Fully Loaded
-self.values.player.extra_ammo_multiplier = {2} --Ammo multiplied by number
-self.values.player.regain_throwable_from_ammo = {{chance = 0.10, chance_inc = 1.1}} --10% base chance to loot throwable and 10% increase of base chance for every non-throwable looted
+self.values.player.extra_ammo_multiplier = {1.75} --Ammo multiplied by number
+self.values.player.regain_throwable_from_ammo = {{chance = 0.10, chance_inc = 1}} --10% base chance to loot throwable and 0% increase of base chance for every non-throwable looted
 --Bug in the game, values adjusted to make it work somewhat.
+
+self.values.player.projectiles_from_ammo = {true}
+self.definitions.player_projectiles_from_ammo = {
+	name_id = "menu_player_projectiles_from_ammo",
+	category = "feature",
+	upgrade = {
+		value = 1,
+		upgrade = "projectiles_from_ammo",
+		category = "player"
+	}
+}
 
 --Iron Man
 self.values.player.armor_multiplier = {2} --Increase armor values by 100%
