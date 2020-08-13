@@ -737,14 +737,46 @@ self.values.temporary.chico_injector = {{0.75, 9}} --increases Injector time to 
 --self.max_total_cocaine_stacks = 800 --Change max stacks from 600
 self.cocaine_stacks_decay_percentage_per_tick = 0.45 --45% decay + X instead of 60%
 
---Gambler---------------------------------------------------------------------------
+--Gambler (taken from Dr. Newbie's Gambler Perk Deck Buff)---------------------------------------------------------------------------
+self.loose_ammo_give_team_ratio = 1
+
+self.loose_ammo_give_team_health_ratio = 1
+
 self.loose_ammo_restore_health_values = {
-	{0, 4},
-	{4, 8},
+	base = 8,
+	cd = 1,
+	multiplier = 0.3,
+	{0, 8},
 	{8, 12},
-	multiplier = 0.2,
-	cd = 2, --Reduce cooldwon to 2 secs
-	base = 8
+	{12, 16}
+}
+
+self.values.temporary.loose_ammo_restore_health = {}
+for i, data in ipairs(self.loose_ammo_restore_health_values) do
+	local base = self.loose_ammo_restore_health_values.base
+	table.insert(self.values.temporary.loose_ammo_restore_health, {
+		{
+			base + data[1],
+			base + data[2]
+		},
+		self.loose_ammo_restore_health_values.cd
+	})
+end
+
+self.values.temporary.loose_ammo_give_team[1] = {
+	true,
+	2.5
+}
+
+self.values.player.loose_ammo_give_team_twice = {true}
+self.definitions.player_loose_ammo_give_team_twice = {
+	name_id = "menu_player_loose_ammo_give_team_twice",
+	category = "feature",
+	upgrade = {
+		value = 1,
+		upgrade = "loose_ammo_give_team_twice",
+		category = "player"
+	}
 }
 
 --Hacker-----------------------------------------------------------------------------

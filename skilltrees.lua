@@ -823,8 +823,6 @@ function SkillTreeTweakData:init(tweak_data)
 		desc_id = "menu_deckall_8_desc"
 	}
 	
-	
-	
 	--Ex-President (fuses Biker with ex-president)
 	local new_exprez = {
 		name_id = "menu_st_spec_13",
@@ -1231,7 +1229,7 @@ function SkillTreeTweakData:init(tweak_data)
 	
 	self.specializations[18] = new_sicario
 	
-	--Maniac (ALL THE GROUP BUFFS)
+	--Maniac
 	local new_maniac = {
 		{
 			cost = 200,
@@ -1407,6 +1405,18 @@ function SkillTreeTweakData:init(tweak_data)
 		desc_id = "menu_st_spec_21_desc",
 		name_id = "menu_st_spec_21"
 	}
+
+	--Gambler
+	local new_gambler_t9 = {
+				upgrades = {
+					"player_passive_loot_drop_multiplier",
+					"temporary_loose_ammo_restore_health_3",
+					"player_loose_ammo_give_team_twice"
+				}
+			}
+	
+	self.specializations[10][9].upgrades = new_gambler_t9.upgrades
+	--table.insert(self.specializations[10][9].upgrades, "player_loose_ammo_give_team_twice")
 
 	
 end

@@ -152,7 +152,15 @@ Hooks:Add("LocalizationManagerPostInit", "SnPTweaks_LocalizationManagerPostInit"
 		["menu_deck21_1_desc"] = "Unlocks and equips the ##Pocket ECM Device##.\nChanging to another perk deck will make the Pocket ECM Device unavailable again. The Pocket ECM Device replaces your current throwable, it can be switched out if desired. While in game you can use the throwable key to activate the Pocket ECM Device.\n\nActivating the Pocket ECM Device before the alarm is raised will trigger the jamming effect, disabling all electronics and pagers for a ##6 second## duration.\n\nActivating the Pocket ECM Device after the alarm is raised will trigger the feedback effect, granting a chance to stun enemies on the map every second for a ##6 second## duration.\n\nThe Pocket ECM Device has ##2## charges with a ##100 second## cooldown timer, but each kill you perform will shorten the cooldown timer by ##10 seconds##.\n\nNote: Charges run on separate cooldowns. When both charges are used, the second charge will not run its cooldown or have it reduced by kills until the first charge's cooldown finishes.",
 		["menu_deck21_5_desc"] = "Killing an enemy while the feedback effect is active will regenerate ##20## health and armor.\n\nIncreases dodge by ##15%##.",
 		["menu_deck21_7_desc"] = "Killing at least ##1## enemy while the feedback or jamming effect is active will grant ##23## dodge for ##30 seconds##.\n\nThe time between swapping weapons is reduced for you by ##80%##.",
-		["menu_deck21_9_desc"] = "Crew members killing enemies while the feedback effect is active will regenerate ##10## health.\n\nFurther increases dodge to ##30%##."
+		["menu_deck21_9_desc"] = "Crew members killing enemies while the feedback effect is active will regenerate ##10## health.\n\nFurther increases dodge to ##30%##.",
+		--Gambler
+		["menu_deck10_1_desc"] = "Ammo packs you pick up also yield medical supplies which heal you for ##16## to ##32## health.\n\nThis cannot occur more than once every second.\n\nIf your current health is lower than another player's, the health regeneration effect is increased by an additional ##30%##. This can stack up to ##3## times, for a total of ##90%##.",
+		["menu_deck10_3_desc"] = "On ammo pack pick up, you trigger one for ##50%## of its normal effectivity for other crew members.\n\nThis cannot occur more than once every ##2.5## seconds.\n\nYour maximum health is increased by ##20%##.",
+		["menu_deck10_5_desc"] = "On ammo pack pick up, your crew members will also get healed by ##100%## of the amount of health you recovered.\n\nYour maximum health is increased by an additional ##20%##, for a total of ##40%##.",
+		["menu_deck10_7_desc"] = "Minimum and maximum health regeneration is increased by an additional ##8## health, for a total of ##32## to ##40## health.",
+		["menu_deck10_9_desc"] = "Minimum and maximum health regeneration is increased by an additional ##8## health, for a total of ##40## to ##48## health.\n\n##Your shared healing and ammo effect is now twice as effective.##\n\nDeck Completion Bonus: Your chance of getting a higher quality item during a Payday is increased by ##10%##."
+}
+
 	} )
 
 end)
