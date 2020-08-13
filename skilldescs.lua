@@ -37,7 +37,7 @@ Hooks:Add("LocalizationManagerPostInit", "SnPTweaks_LocalizationManagerPostInit"
 		--Drill Expert
 		["menu_drill_expert_beta_desc"] = "BASIC: ##$basic##\nYour drill and saw timer is decreased by ##30%##.\n(##15%## as client to prevent desync)\n\nACE: ##$pro##\nYour drill and saw timer is decreased by ##65%##.\n(##30%## as client)",
 		--Kickstarter
-		["menu_kick_starter_beta_desc"] = "BASIC: ##$basic##\nYour drills and saws gain an additional ##30%## chance to automatically restart after breaking. (##20%## as client to prevent desync)\n\nYou regenerate ##0.5## stamina for each enemy you set on fire.\n\nACE: ##$pro##\nEnables the ability to reset a broken drill or saw with a melee attack. The ability has a ##50%## chance to fix the drill or saw. The ability can only be used once per time the drill or saw is broken.",
+		["menu_kick_starter_beta_desc"] = "BASIC: ##$basic##\nYour drills and saws gain an additional ##30%## chance to automatically restart after breaking. (##20%## as client to prevent desync)\n\nYou regenerate ##0.5## stamina for each enemy you set on fire.\n\nACE: ##$pro##\nEnables the ability to reset a broken drill or saw with a melee attack. The ability has a ##50%## chance to fix the drill or saw. The ability can only be used once per time the drill or saw is broken.\n\nYour burns last ##50%## longer.",
 		--Optical Illusion
 		["menu_optic_illusions_desc"] = "BASIC: ##$basic##\nYou are ##35%## less likely to be targeted by enemies.\n\nACE: ##$pro##\nYou gain ##3## concealment for each silenced weapon you equip and reduces the concealment penalty of silencers by ##6##.",
 		--Nine Lives
@@ -81,7 +81,7 @@ Hooks:Add("LocalizationManagerPostInit", "SnPTweaks_LocalizationManagerPostInit"
 		--Marksman
 		["menu_sharpshooter_beta_desc"] = "BASIC: ##$basic##\nYou gain ##8## weapon accuracy with all SMGs, Assault Rifles and Sniper Rifles fired in single shot fire mode. Furthermore, you and your crew's weapon stability with pistols is increased by ##4## points.\n\nACE: ##$pro##\nYou gain a ##20%## accuracy bonus while aiming down sights with all SMGs, Assault Rifles and Sniper Rifles fired in single shot fire mode. Furthermore, you and your crew's weapon stability with all weapons is increased by ##8## points.",
 		--Surefire
-		["menu_fast_fire_beta_desc"] = "BASIC: ##$basic##\nYour SMGs, LMGs and Assault Rifles gain ##15## more bullets in their magazine. This does not affect the \"Lock n' Load\" Ace skill.\n\nACE: ##$pro##\nYour ranged weapons can now pierce through enemy body armor and shields. Furthermore, your bullets can now pierce through thin (##40cm##) walls.\n\nNote: Does not apply to throwable weapons or shotguns.",
+		["menu_fast_fire_beta_desc"] = "BASIC: ##$basic##\nYour SMGs, LMGs and Assault Rifles gain ##15## more bullets in their magazine. This does not affect the \"Lock n' Load\" Ace skill.\n\nAll your damage can critically hit.\n\nACE: ##$pro##\nYour ranged weapons can now pierce through enemy body armor and shields. Furthermore, your bullets can now pierce through thin (##40cm##) walls.\n\nNote: Does not apply to throwable weapons or shotguns.",
 		--Unseen Strike
 		["menu_unseen_strike_beta_desc"] = "BASIC: ##$basic##\nIf you do not lose any armor or health for 4 seconds, you gain ##25%## critical hit chance for ##14 seconds##.\n\nACE: ##$pro##\nIf you do not lose any armor or health for 3 seconds, you gain ##50%## critical hit chance for ##24 seconds##.",
 		--Bulletstorm
@@ -93,7 +93,7 @@ Hooks:Add("LocalizationManagerPostInit", "SnPTweaks_LocalizationManagerPostInit"
 		--Extra Lead
 		["menu_ammo_2x_beta_desc"] = "BASIC: ##$basic##\nYou can now place ##2## ammo bags instead of just one.\n\nAmmo bags placed by you grant players the ability to shoot without depleting their ammunition for up to ##5 seconds## after interacting with it. The more ammo players replenish, the longer the duration of the effect.\n\nACE: ##$pro##\nEach ammo bag contains ##50%## more ammunition.\n\nIncreases the base duration of the conditional infinite ammo effect by up to ##15 seconds##.",
 		--More Firepower
-		["menu_more_fire_power_desc"] = "BASIC: ##$basic##\nYou gain ##1## more shaped charge and ##4## more trip mines.\n\nYour fire damage is increased by ##35%##.\n\nACE: ##$pro##\nYou gain ##2## more shaped charges and ##7## more trip mines.\n\nYour fire damage is twice as strong against Bulldozers.",
+		["menu_more_fire_power_desc"] = "BASIC: ##$basic##\nYou gain ##1## more shaped charge and ##4## more trip mines.\n\nYour fire damage is increased by ##35%##.\n\nACE: ##$pro##\nYou gain ##2## more shaped charges and ##7## more trip mines.\n\nYour fire damage against Bulldozers is increased by ##150%##.",
 		--Combat Engineering
 		["menu_combat_engineering_desc"] = "BASIC: ##$basic##\nThe radius of your trip mine explosion is increased by ##30%##.\n\nYou gain ##1## throwable for every ##30## stamina used.\n\nACE: ##$pro##\nYour trip mine damage is increase by ##50%##.\n\nYou gain ##5%## ammo of your weapons' total ammo for every ##20## stamina used.",
 		--Fire Trap

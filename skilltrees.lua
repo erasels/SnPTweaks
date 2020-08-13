@@ -672,7 +672,8 @@ function SkillTreeTweakData:init(tweak_data)
 		},
 		{
 			upgrades = {
-				"player_drill_melee_hit_restart_chance_1"
+				"player_drill_melee_hit_restart_chance_1",
+				"weapon_longer_burn_1"
 			},
 			cost = self.costs.hightierpro
 		},
@@ -681,6 +682,29 @@ function SkillTreeTweakData:init(tweak_data)
 		icon_xy = {
 			9,
 			8
+		}
+	}
+	
+	--surefire
+	self.skills.fast_fire = {
+		{
+			upgrades = {
+				"player_automatic_mag_increase_1",
+				"player_anything_can_crit"
+			},
+			cost = self.costs.hightier
+		},
+		{
+			upgrades = {
+				"player_ap_bullets_1"
+			},
+			cost = self.costs.hightierpro
+		},
+		name_id = "menu_fast_fire_beta",
+		desc_id = "menu_fast_fire_beta_desc",
+		icon_xy = {
+			10,
+			2
 		}
 	}
 	

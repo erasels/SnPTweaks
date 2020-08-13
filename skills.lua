@@ -171,6 +171,18 @@ self.values.player.increased_pickup_area = {1.75}
 self.values.weapon.automatic_head_shot_add = {0.5, 1} --50% crit to all at 1, 100% at 2
 
 --Surefire now pireces through shields and walls, specified in RaycastWeaponsBase_PierceChanges
+--Anything can crit
+self.values.player.anything_can_crit = { true}
+
+self.definitions.player_anything_can_crit = {
+  name_id = "menu_player_anything_can_crit",
+  category = "feature",
+  upgrade = {
+    value = 1,
+    upgrade = "anything_can_crit",
+    category = "player"
+  }
+}
 
 --Drill skills
 self.values.player.drill_fix_interaction_speed_multiplier = {0.3}
@@ -184,6 +196,7 @@ end
 --Hardware Expert (add more to ace because drill restart is boring)
 
 --Kickstarter
+--burn stamina regen
 self.values.player.fire_stamina_regen = {0.5}
 
 self.definitions.player_fire_stamina_regen = {
@@ -196,9 +209,21 @@ self.definitions.player_fire_stamina_regen = {
   }
 }
 
+self.values.weapon.stronger_burn = { 1.5, 2 } --Increase burn dot length by 50/100%
+
+self.definitions.weapon_longer_burn_1 = {
+  name_id = "menu_weapon_longer_burn",
+  category = "feature",
+  upgrade = {
+    value = 1,
+    upgrade = "longer_burn",
+    category = "weapon"
+  }
+}
+
 --More Firepower
 self.values.weapon.stronger_burn = { 1.35, 1.6 } --Increase fire damage by 35/60%
-self.values.weapon.tank_burn = { 2 } --Buldozers take double damage
+self.values.weapon.tank_burn = { 2.5 } --Buldozers take double damage
 
 self.definitions.weapon_stronger_burn_1 = {
   name_id = "menu_weapon_stronger_burn",
@@ -495,6 +520,8 @@ self.definitions.player_revived_damage_resist_2 = {
 
 self.values.temporary.revived_damage_resist = {
 		{0.6, 10}, {0.2, 10}} --Adds a second stage of dmg res after revive (40% res and then 80% res for 10 secs)
+
+
 
 --Running From Death
 --Definitions for health regain, weapon reload speed and weapon swap speed on revive
