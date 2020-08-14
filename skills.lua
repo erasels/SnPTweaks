@@ -731,11 +731,11 @@ self.values.player.damage_to_hot = {
 self.values.player.damage_to_hot_extra_ticks = {2} --reduced from 4
 
 --Infiltrator (&Sociopath)-----------------------------------------------------------
---Regen 20% health on melee strike every 1 second
-self.values.temporary.melee_life_leech = {{0.2, 0.1}}
+--Regen 10% health on melee strike every 1 second
+self.values.temporary.melee_life_leech = {{0.1, 0.1}}
 
---20% dmg red when X enemies within 18m for 10 (norm:7) secs
-self.values.temporary.dmg_dampener_outnumbered_strong = {{0.8, 10}}
+--15% dmg red when X enemies within 18m for 10 (norm:7) secs
+self.values.temporary.dmg_dampener_outnumbered_strong = {{0.85, 10}}
 
 --dmg red under contition for X active enemies within 18m
 self.values.temporary.dmg_dampener_close_contact = {
