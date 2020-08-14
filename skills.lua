@@ -446,10 +446,10 @@ self.definitions.player_crouch_dodge_chance_1 = {
 
 self.values.player.crouch_dodge_chance = {0.07, 0.15} -- Changed crouch-dodge-mult with this (crouching gives 7% (or 15%) additional dodge chance)
 
-self.values.player.stamina_regen_timer_multiplier = {0.25} --75% faster restart of stamina regen
-self.values.player.stamina_regen_multiplier = {1.5} -- 50% inc stamina regen
-self.values.player.run_speed_multiplier = {1.4} --40% faster sprinting
-self.values.player.run_dodge_chance = {0.20} --20% increased dodge whislt sprinting
+self.values.player.stamina_regen_timer_multiplier = {0.5} --50% faster restart of stamina regen
+self.values.player.stamina_regen_multiplier = {1.4} -- 40% inc stamina regen
+self.values.player.run_speed_multiplier = {1.3} --30% faster sprinting
+self.values.player.run_dodge_chance = {0.15} --15% increased dodge whislt sprinting
 
 --Second wind (make Ace more interesting)
 self.values.player.dodge_stamina_regen = { 15 }

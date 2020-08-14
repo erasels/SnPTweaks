@@ -13,7 +13,7 @@ Hooks:Add("LocalizationManagerPostInit", "SnPTweaks_LocalizationManagerPostInit"
 		--Fully Loaded
 		["menu_bandoliers_beta_desc"] = "BASIC: ##$basic##\nYour total ammo capacity is increased by ##75%##.\n\nYou also gain a ##10%## base chance to get a throwable from an ammo box.\n\nACE: ##$pro##\nIncreases the amount of ammo you gain from ammo boxes by ##75%##, you can also get projectiles from them now.",
 		--Duck and Cover
-		["menu_sprinter_beta_desc"] = "BASIC: ##$basic##\nYour stamina starts regenerating ##75%## earlier and ##50%## faster. You also sprint ##40%## faster.\n\nACE: ##$pro##\nYou have a ##20%## increased chance to dodge while sprinting and a ##7%## increased chance to dodge while crouching. You gain ##15%## chance to dodge while ziplining.",
+		["menu_sprinter_beta_desc"] = "BASIC: ##$basic##\nYour stamina starts regenerating ##50%## earlier and ##40%## faster. You also sprint ##30%## faster.\n\nACE: ##$pro##\nYou have a ##15%## increased chance to dodge while sprinting and a ##7%## increased chance to dodge while crouching. You gain ##15%## chance to dodge while ziplining.",
 		--Iron Man
 		["menu_juggernaut_beta_desc"] = "BASIC: ##$basic##\nYour total armor value is increased by ##100%##.\n\nACE: ##$pro##\nUnlocks the ability to wear the ##Improved Combined Tactical Vest##.\n\nYour total armor value is increased to ##200%## of its original value.",
 		--Hostage taker
