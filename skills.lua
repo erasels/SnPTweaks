@@ -598,6 +598,18 @@ self.definitions.player_temp_swap_weapon_faster_2 = {
 self.values.temporary.swap_weapon_faster = {
 		{2, 10}, {2, 20}} --Increases the weapon swap speed by 100% after revive for 10/20 seconds 
 
+--Definition for armor doubling for each arrested teammate
+self.values.player.armor_double_for_suckers = {true}
+
+self.definitions.player_armor_double_for_suckers = {
+	category = "player",
+	name_id = "menu_player_armor_double_for_suckers",
+	upgrade = {
+		category = "player",
+		upgrade = "armor_double_for_suckers",
+		value = 1
+	}
+}
 --Nine Lives
 --self.values.player.additional_lives = {2, 3} --May be too obviously cheaty
 self.values.player.bleed_out_health_multiplier = {5} --Bleedout health quintupled

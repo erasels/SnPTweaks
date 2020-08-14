@@ -53,7 +53,7 @@ Hooks:Add("LocalizationManagerPostInit", "SnPTweaks_LocalizationManagerPostInit"
 		--Up You Go
 		["menu_up_you_go_beta_desc"] = "BASIC: ##$basic##\nYou take ##40%## less damage and move ##30%## faster for ##10 seconds## after being revived.\n\nWhenever a teammate goes down, your armor and health are fully restored.\n\nACE: ##$pro##\nYou take ##80%## less damage for ##10 seconds## after being revived.",
 		--Running From Death
-		["menu_running_from_death_beta_desc"] = "BASIC: ##$basic##\nYou reload and swap weapons ##100%## faster for ##10 seconds## and regain ##20%## more health after being revived.\n\nACE: ##$pro##\nYou reload and swap weapons ##100%## faster for ##20## seconds and regain ##50%## more health after being revived.",
+		["menu_running_from_death_beta_desc"] = "BASIC: ##$basic##\nYou reload and swap weapons ##100%## faster for ##10 seconds## and regain ##20%## more health after being revived.\n\nYou gain ##100%## additional max armor for each teammate in custody.\n\nACE: ##$pro##\nYou reload and swap weapons ##100%## faster for ##20## seconds and regain ##50%## more health after being revived.",
 		--High Value Target
 		["menu_spotter_teamwork_beta_desc"] = "BASIC: ##$basic##\nEnemies you mark take ##15%## more damage and you can now mark specials by aiming at them with any weapon.\n\nACE: ##$pro##\nEnemies you mark take an additional ##30%## damage when you're not directly touching them. Increases the duration of marked enemies by ##100%##.",
 		--Painkillers

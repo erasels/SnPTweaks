@@ -61,7 +61,8 @@ function SkillTreeTweakData:init(tweak_data)
 			upgrades = {
 				"player_revived_health_regain_1", --get more health on revive
 				"player_temp_swap_weapon_faster_1",
-				"player_temp_reload_weapon_faster_1"
+				"player_temp_reload_weapon_faster_1",
+				"player_armor_double_for_suckers"
 			},
 			cost = self.costs.hightier
 		},

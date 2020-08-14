@@ -145,3 +145,15 @@ Hooks:PreHook(PlayerManager, "activate_temporary_upgrade", "SnP_pre_activate_tem
 		end
 	end
 end)
+
+--armor multiplier based on teammates dead
+local old_body_armor_skill_multiplier = PlayerManager.body_armor_skill_multiplier
+
+function PlayerManager:body_armor_skill_multiplier(...)
+	local Ans = old_body_armor_skill_multiplier(self, ...)
+	if self:has_category_upgrade("player", "armor_double_for_suckers") and managers.trade and managers.trade:num_in_trade_queue() > 0 then
+		Ans = Ans * math.pow(2, managers.trade:num_in_trade_queue())
+	end
+	
+	return Ans
+end
