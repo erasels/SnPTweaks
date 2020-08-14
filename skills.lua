@@ -355,8 +355,8 @@ self.values.player.taser_malfunction = {
 
 self.values.temporary.dodge_reload_speed = { 
 	{ 1.3,3},
-	{ 1.7,3}
- } --30/70% reload speed for 3 seconds
+	{ 1.6,3}
+ } --30/60% reload speed for 3 seconds
 self.definitions.temporary_dodge_reload_speed_1 = {
   name_id = "menu_temporary_dodge_reload_speed",
   category = "temporary",

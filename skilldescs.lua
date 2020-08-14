@@ -61,7 +61,7 @@ Hooks:Add("LocalizationManagerPostInit", "SnPTweaks_LocalizationManagerPostInit"
 		--Swan Song
 		["menu_perseverance_beta_desc"] = "BASIC: ##$basic##\nInstead of getting downed instantly, you gain the ability to keep on fighting for ##4 seconds## with a ##50%## movement penalty before going down.\n\nNote: Does not trigger on fall or fire damage.\n\nACE: ##$pro##\nIncreases the duration of Swan Song to ##8 seconds##. Ammunition won't be depleted while the effect is active.",
 		--Shockproof
-		["menu_insulation_beta_desc"] = "BASIC: ##$basic##\nWhen tased, the shock effect has a ##50%## chance to backfire on the Taser every second for 10 seconds, knocking them back.\n\nSuccessfully dodging will increase your reload speed by ##30%## for ##3## seconds.\n\nACE: ##$pro##\nWhen tased, you are able to free yourself from the taser interacting with it within ##2 seconds## of getting tased.\n\nThe reload speed increase is increased to ##70%##.",
+		["menu_insulation_beta_desc"] = "BASIC: ##$basic##\nWhen tased, the shock effect has a ##50%## chance to backfire on the Taser every second for 10 seconds, knocking them back.\n\nSuccessfully dodging will increase your reload speed by ##30%## for ##3## seconds.\n\nACE: ##$pro##\nWhen tased, you are able to free yourself from the taser interacting with it within ##2 seconds## of getting tased.\n\nThe reload speed increase is increased to ##60%##.",
 		--Martial Arts
 		["menu_martial_arts_beta_desc"] = "BASIC: ##$basic##\nYou take ##75%## less damage from all melee attacks.\n\nIncrease your maximum stamina by ##5##.\n\nACE: ##$pro##\nYou are ##75%## more likely to knock down enemies with a melee strike.\n\nYou gain an additional ##10## maximum stamina.",
 		--Pumping Iron
