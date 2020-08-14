@@ -51,7 +51,7 @@ Hooks:Add("LocalizationManagerPostInit", "SnPTweaks_LocalizationManagerPostInit"
 		--Scavenger
 		["menu_scavenging_beta_desc"] = "BASIC: ##$basic##\nYour ammo box pick up range is increased by ##75%## and every ##8th## enemy you kill will drop an extra ammo box.\n\nACE: ##$pro##\nEvery ##3rd## enemy you kill will drop an extra ammo box.\n\nNote: Ammo box drop modifications only work as host. As client this skill will only add an extra ammo box drop every ##6th## enemy with it's ##Ace## version.",
 		--Up You Go
-		["menu_up_you_go_beta_desc"] = "BASIC: ##$basic##\nYou take ##40%## less damage and move ##30%## faster for ##10 seconds## after being revived.\n\nACE: ##$pro##\nYou take ##80%## less damage for ##10 seconds## after being revived.",
+		["menu_up_you_go_beta_desc"] = "BASIC: ##$basic##\nYou take ##40%## less damage and move ##30%## faster for ##10 seconds## after being revived.\n\nWhenever a teammate goes down, your armor and health are fully restored.\n\nACE: ##$pro##\nYou take ##80%## less damage for ##10 seconds## after being revived.",
 		--Running From Death
 		["menu_running_from_death_beta_desc"] = "BASIC: ##$basic##\nYou reload and swap weapons ##100%## faster for ##10 seconds## and regain ##20%## more health after being revived.\n\nACE: ##$pro##\nYou reload and swap weapons ##100%## faster for ##20## seconds and regain ##50%## more health after being revived.",
 		--High Value Target

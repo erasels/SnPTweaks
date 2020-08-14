@@ -39,7 +39,8 @@ function SkillTreeTweakData:init(tweak_data)
 		[1] = {
 			upgrades = {
 				"player_revived_damage_resist_1",
-				"player_temp_increased_movement_speed_1" --Gives 30% move speed
+				"player_temp_increased_movement_speed_1", --Gives 30% move speed
+				"player_replenish_on_teammate_down"
 			},
 			cost = self.costs.hightier
 		},

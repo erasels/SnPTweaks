@@ -60,6 +60,10 @@
 		{
 			"hook_id": "lib/units/pickups/ammoclip",
 			"script_path": "ammoclip.lua"
+		},
+		{
+			"hook_id": "lib/managers/group_ai_states/groupaistatebase",
+			"script_path": "groupaistatebase.lua"
 		}
 	]
 }

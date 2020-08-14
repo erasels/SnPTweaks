@@ -8,17 +8,11 @@ Dodge near hostages in Stockholm syndrome
 
 Damage reduction when running melee tree
 
-Boosts for stats when people are dead in fugi (nepgear Las)
-
 Integrate gamblers perk deck boost and remove parts of it from other perk decks
-
-Martial arts, increase stamina with ace
 
 Stamina based dodge chance?
 
 
 https://github.com/DrNewbie/Mess/tree/master/mods/Emergency%20Defibrillation%20(Addon%20Equipment)
-https://github.com/DrNewbie/Mess/tree/master/mods/%5BX%5D%20Nepgear%20LAS%20Boosts
 https://github.com/DrNewbie/Mess/tree/master/mods/Toga%20Himiko%20(Def%20Edit)%20LAS%20Boosts
-https://github.com/DrNewbie/Mess/tree/master/mods/Gambler%20Perk%20Deck%20Buff
 

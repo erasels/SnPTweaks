@@ -545,7 +545,18 @@ self.definitions.player_revived_damage_resist_2 = {
 self.values.temporary.revived_damage_resist = {
 		{0.6, 10}, {0.2, 10}} --Adds a second stage of dmg res after revive (40% res and then 80% res for 10 secs)
 
+--Definition for health and armor replenish on teammate down
+self.values.player.replenish_on_teammate_down = {true}
 
+self.definitions.player_replenish_on_teammate_down = {
+	category = "player",
+	name_id = "menu_player_replenish_on_teammate_down",
+	upgrade = {
+		category = "player",
+		upgrade = "replenish_on_teammate_down",
+		value = 1
+	}
+}
 
 --Running From Death
 --Definitions for health regain, weapon reload speed and weapon swap speed on revive
