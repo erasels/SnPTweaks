@@ -628,7 +628,7 @@ self.definitions.player_max_health_reduction_2 = {
 
 self.values.player.max_health_reduction = {0.30, 0.25} --Max health reduction now 30 and 25%
 
-self.values.player.health_damage_reduction = {0.8, 0.6} --Damage reduction from frenzy changed to 20 and 40%
+self.values.player.health_damage_reduction = {0.8, 0.65} --Damage reduction from frenzy changed to 20 and 35%
 
 --Berserker
 self.values.player.melee_damage_health_ratio_multiplier = {4} --melee and saw dmg scales to up to 400% inc dmg
@@ -739,9 +739,9 @@ self.values.temporary.dmg_dampener_outnumbered_strong = {{0.8, 10}}
 
 --dmg red under contition for X active enemies within 18m
 self.values.temporary.dmg_dampener_close_contact = {
-	{0.89, 10},
-	{0.78, 10},
-	{0.67, 10}}
+	{0.9, 10},
+	{0.8, 10},
+	{0.7, 10}}
 	
 --Ex-President----------------------------------------------------------------------
 self.values.player.armor_max_health_store_multiplier = {2} --increase the capacity of stored health by 100%
