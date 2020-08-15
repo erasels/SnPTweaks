@@ -49,8 +49,9 @@ Hooks:PostHook(PlayerStandard, "_update_movement", "SnP_post_upd_mov", function(
 							hit_pos = unit:movement():m_head_pos(),
 							range = 100,
 							collision_slotmask = managers.slot:get_mask("explosion_targets"),
-							damage = self._ext_movement:stamina() * 2,
-							no_raycast_check_characters = false
+							damage = self._ext_movement:stamina() * 4,
+							ignore_unit = self._unit,
+							user = self._unit
 						})
 					end
 				end

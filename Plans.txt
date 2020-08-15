@@ -8,7 +8,7 @@ Dodge near hostages in Stockholm syndrome
 
 Integrate gamblers perk deck boost and remove parts of it from other perk decks
 
-Stamina based dodge chance?
+Stamina based dodge chance? (optical illusions, put a nerfed version of the ace on basic)
 
 
 https://github.com/DrNewbie/Mess/tree/master/mods/Emergency%20Defibrillation%20(Addon%20Equipment)
