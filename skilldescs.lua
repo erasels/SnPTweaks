@@ -108,6 +108,8 @@ Hooks:Add("LocalizationManagerPostInit", "SnPTweaks_LocalizationManagerPostInit"
 		["menu_overkill_beta_desc"] = "BASIC: ##$basic##\nWhen you kill an enemy with a shotgun or the OVE9000 portable saw, you receive a ##75%## damage increase for ##20## seconds.\n\nUnlocks the OVE9000 portable saw for you to use as a secondary weapon.\n\nACE: ##$pro##\nThe damage bonus now applies to all weapons. Skill must still be activated using a Shotgun or the OVE9000 portable saw. \nYour weapon swap speed is increased by ##80%##.",
 		--Transporter
 		["menu_pack_mule_beta_desc"] = "BASIC: ##$basic##\nYou can throw bags ##50%## further.\n\nFor each ##10## armor points the bag movement penalty is reduced by ##1%##.\n\nACE: ##$pro##\nWhen your armor breaks, nearby enemies will be ignited for your maximum amount of armor.",
+		--Stockholm syndrom
+		["menu_pack_mule_beta_desc"] = "BASIC: ##$basic##\nCivilians are intimidated by the noise you make and remain intimidated ##50%## longer.\n\nYou gain ##10%## dodge chance near civilians.\n\nACE: ##$pro##\nYour hostages will not flee when they have been rescued by law enforcers. Whenever you get into custody, your hostages will trade themselves for your safe return. This effect can occur during assaults, but only ##1## time during a heist.\n\nYou gain an additional ##10%## dodge chance near civilians.",
 		
 		--PERKS
 		--Grinder

@@ -24,6 +24,29 @@ self.values.player.minion_master_speed_multiplier = {1.15} --You get 15% inc mov
 --Joker
 self.values.player.convert_enemies_damage_multiplier = {0.65, 8} --Converts deal octuple damage
 
+--Stockholm syndrom
+self.values.player.hostage_proximity_dodge = {0.1, 0.2}
+
+self.definitions.player_hostage_proximity_dodge_1 = {
+	name_id = "menu_player_hostage_proximity_dodge",
+	category = "feature",
+	upgrade = {
+		value = 1,
+		upgrade = "hostage_proximity_dodge",
+		category = "player"
+	}
+}
+
+self.definitions.player_hostage_proximity_dodge_2 = {
+	name_id = "menu_player_hostage_proximity_dodge",
+	category = "feature",
+	upgrade = {
+		value = 2,
+		upgrade = "hostage_proximity_dodge",
+		category = "player"
+	}
+}
+
 --Marksman
 --Added crew bonuses from leagcy to upgrades
 

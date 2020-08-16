@@ -782,6 +782,30 @@ function SkillTreeTweakData:init(tweak_data)
 		}
 	}
 	
+	--Stockholm syndrom
+	self.skills.stockholm_syndrome = {
+		{
+			upgrades = {
+				"player_civ_calming_alerts",
+				"player_hostage_proximity_dodge_1"
+			},
+			cost = self.costs.hightier
+		},
+		{
+			upgrades = {
+				"player_super_syndrome_1",
+				"player_hostage_proximity_dodge_2"
+			},
+			cost = self.costs.hightierpro
+		},
+		name_id = "menu_stockholm_syndrome_beta",
+		desc_id = "menu_stockholm_syndrome_beta_desc",
+		icon_xy = {
+			3,
+			8
+		}
+	}
+	
 	--PERKS-----------------------------------------------------------------------------------------------
 	--Workaround
 	local deck2 = {
