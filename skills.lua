@@ -75,7 +75,7 @@ self.definitions.player_projectiles_from_ammo = {
 --Iron Man
 self.values.player.armor_multiplier = {2} --Increase armor values by 100%
 
-self.values.player.armor_multiplier[2] = self.values.player.armor_multiplier[1] + 1 --inc armor values by 200% for second stage
+self.values.player.armor_multiplier[2] = self.values.player.armor_multiplier[1] + 1 --inc armor values by an additional 100% for second stage
 
 	self.definitions.player_armor_multiplier_2 = {
 		name_id = "menu_player_armor_multiplier",
@@ -651,7 +651,7 @@ self.definitions.player_max_health_reduction_2 = {
 
 self.values.player.max_health_reduction = {0.30, 0.25} --Max health reduction now 30 and 25%
 
-self.values.player.health_damage_reduction = {0.8, 0.65} --Damage reduction from frenzy changed to 20 and 35%
+self.values.player.health_damage_reduction = {0.85, 0.7} --Damage reduction from frenzy changed to 15 and 30%
 
 --Berserker
 self.values.player.melee_damage_health_ratio_multiplier = {4} --melee and saw dmg scales to up to 400% inc dmg
