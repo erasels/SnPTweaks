@@ -1111,9 +1111,7 @@ function SkillTreeTweakData:init(tweak_data)
 			name_id = "menu_deck8_1",
 			upgrades = {
 				"player_damage_dampener_close_contact_1",
-				"player_armor_regen_damage_health_ratio_multiplier_1", --yak
-				"player_armor_regen_damage_health_ratio_multiplier_2", --yak
-				"player_armor_regen_damage_health_ratio_multiplier_3" --yak
+				"player_armor_regen_damage_health_ratio_multiplier_1" --yak
 			},
 			icon_xy = {
 				3,
