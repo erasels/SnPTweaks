@@ -256,7 +256,7 @@ self.definitions.player_fire_stamina_regen = {
   }
 }
 
-self.values.weapon.stronger_burn = { 1.5, 2 } --Increase burn dot length by 50/100%
+self.values.weapon.longer_burn = { 1.5, 2 } --Increase burn dot length by 50/100%
 
 self.definitions.weapon_longer_burn_1 = {
   name_id = "menu_weapon_longer_burn",
