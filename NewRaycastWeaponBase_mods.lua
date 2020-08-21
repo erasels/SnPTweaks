@@ -32,12 +32,12 @@ function NewRaycastWeaponBase:_convert_add_to_mul(multiplier, ...)
 		
 		--Agressive Reload
 		if managers.player:has_category_upgrade("weapon", "all_reload_speed_increase") then
-			multiplier = multiplier + managers.player:upgrade_value("weapon", "all_reload_speed_increase", 0)
+			multiplier = multiplier - managers.player:upgrade_value("weapon", "all_reload_speed_increase", 0)
 		end
 		
 		--SnPBulletstorm2
 		if managers.player:has_category_upgrade("shotgun", "melee_knockdown_mul") then
-			multiplier = multiplier + 0.2
+			multiplier = multiplier - 0.2
 		end
 	end
 	return old_convert_add_to_mul(self, multiplier, ...)
