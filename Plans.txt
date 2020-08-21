@@ -4,11 +4,9 @@ Gain something on melee hit (ammo or health, or dodge?)
 
 Attacking an enemy makes them ignore you for a short time
 
-Dodge near hostages in Stockholm syndrome
-
-Integrate gamblers perk deck boost and remove parts of it from other perk decks
-
 Stamina based dodge chance? (optical illusions, put a nerfed version of the ace on basic)
+
+In case of Agressive Reload basic buff, add a lose health on reload effect to it
 
 
 https://github.com/DrNewbie/Mess/tree/master/mods/Emergency%20Defibrillation%20(Addon%20Equipment)
