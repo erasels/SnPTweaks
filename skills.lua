@@ -47,6 +47,28 @@ self.definitions.player_hostage_proximity_dodge_2 = {
 	}
 }
 
+--Agressive reload
+--Nerfed value from 2 (100% inc) to 60% because of the buff in playermanager
+self.values.temporary.single_shot_fast_reload = {
+		{
+			1.6,
+			3
+		}
+	}
+
+--Increase reload speed with all weapons by 25%
+self.values.weapon.all_reload_speed_increase = {0.25, 0.5}
+
+self.definitions.weapon_all_reload_speed_increase_1 = {
+	name_id = "menu_weapon_all_reload_speed_increase",
+	category = "feature",
+	upgrade = {
+		value = 1,
+		upgrade = "all_reload_speed_increase",
+		category = "weapon"
+	}
+}
+
 --Marksman
 --Added crew bonuses from leagcy to upgrades
 

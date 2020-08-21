@@ -184,3 +184,18 @@ function PlayerManager:skill_dodge_chance(...)
 	
 	return chance
 end
+
+--Agressive reload buff (removed single shot and weapon restictions)
+function PlayerManager:_on_activate_aggressive_reload_event(attack_data)
+	if attack_data and attack_data.variant ~= "projectile" then
+		local weapon_unit = self:equipped_weapon_unit()
+
+		if weapon_unit then
+			local weapon = weapon_unit:base()
+
+			if weapon then
+				self:activate_temporary_upgrade("temporary", "single_shot_fast_reload")
+			end
+		end
+	end
+end

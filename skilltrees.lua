@@ -806,6 +806,31 @@ function SkillTreeTweakData:init(tweak_data)
 		}
 	}
 	
+	--Agressive Reload
+	self.skills.speedy_reload = {
+		{
+			upgrades = {
+				"weapon_all_reload_speed_increase_1"
+				--[["assault_rifle_reload_speed_multiplier",
+				"smg_reload_speed_multiplier",
+				"snp_reload_speed_multiplier"]]--
+			},
+			cost = self.costs.hightier
+		},
+		{
+			upgrades = {
+				"temporary_single_shot_fast_reload_1"
+			},
+			cost = self.costs.hightierpro
+		},
+		name_id = "menu_speedy_reload_beta",
+		desc_id = "menu_speedy_reload_beta_desc",
+		icon_xy = {
+			8,
+			3
+		}
+	}
+	
 	--PERKS-----------------------------------------------------------------------------------------------
 	--Workaround
 	local deck2 = {
